@@ -495,14 +495,98 @@ h4 {
 /*------------------------------------------------------------------
     [Promo Block]
 ------------------------------------------------------------------*/
-.promo-block {
-  padding: 220px 0 130px;
+.banner-index {
+  padding: 85px 0 20px;
+  margin: 0;
 }
 
-.promo-block .promo-block-title {
-  font-size: 70px;
+#banner-index ul {
+  padding: 0;
+  margin: 0;
+}
+
+#banner-index ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.banner-index .banner-index-planos {
+  font-size: 48px;
   color: #fff;
+  padding: 0;
+  margin: 0;
   line-height: 1;
+}
+
+.banner-index .banner-index-velocidade {
+  font-size: 28px;
+  color: #fff;
+  line-height: 20px;
+}
+
+.banner-index .banner-index-down-up {
+  font-size: 12px;
+  color: #fff;
+  margin-top: -18px;
+}
+
+.banner-index p {
+  font-size: 12px;
+  color: #fff;
+}
+.banner-index p a{
+  font-size: 12px;
+  color: #fff;
+  text-decoration: underline;
+}
+.banner-index p a:hover, a:focus {
+  color: #ea8e05;
+  text-decoration: underline;
+}
+
+.banner-index span {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.banner-index h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 63px;
+  color: #fff;
+  line-height: 32px;
+}
+
+.banner-index .text li {
+  padding-left: 15px !important;
+  position: relative;
+  display: block;
+  margin-bottom: 6px !important;
+  line-height: 20px;
+
+}
+
+.banner-index .text li:before {
+  font-family: 'Hind';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: ">";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  color: #ea8e05;
 }
 
 @media (max-width: 480px) {
@@ -521,6 +605,62 @@ h4 {
   padding-bottom: 20px;
   margin-bottom: 35px;
 }
+
+/*------------------------------------------------------------------
+    [Central do Cliente]
+------------------------------------------------------------------*/
+
+#centraldocliente ul {
+  padding: 0;
+  margin: 0;
+}
+
+#centraldocliente ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.centraldocliente {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  color: #fff;
+}
+
+.centraldocliente li {
+  padding-left: 15px !important;
+  position: relative;
+  display: block;
+  margin-bottom: 6px !important;
+  line-height: 20px;
+
+}
+
+.centraldocliente li:before {
+  font-family: 'Hind';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: ">";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+/*------------------------------------------------------------------
+    [Empresa]
+------------------------------------------------------------------*/
 
 .empresa-img .familia {
   width: 100px;
