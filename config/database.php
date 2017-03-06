@@ -52,7 +52,7 @@ return [
             'prefix' => '',
         ],
 
-        /*'mysql' => [
+        'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
@@ -64,9 +64,9 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
-        ],*/
+        ],
 
-        'mysql' => [
+        /*'mysql' => [
             'driver' => 'mysql',
             'host'     => parse_url(getenv("CLEARDB_DATABASE_URL"))["host"],
             'database' => substr(parse_url(getenv("CLEARDB_DATABASE_URL"))["path"], 1),
@@ -77,7 +77,7 @@ return [
             'prefix' => '',
             'strict' => false,
             'engine' => null,
-        ],
+        ],*/
 
         'pgsql' => [
             'driver' => 'pgsql',
