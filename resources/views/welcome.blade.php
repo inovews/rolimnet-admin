@@ -109,7 +109,8 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="text-right sm-text-left">
-                            <h2 class="color-white margin-b-0">Central do Cliente</h2>
+                            <h2 class="content-heading color-white">Central do Cliente <span class="border text-right"></span></h2>
+                            
                             <div class="row">
                                 <div class="col-sm-12">
                                     <button type="button" class="btn btn-lg btn-default">Acessar Central</button>
