@@ -33,7 +33,7 @@
                         <ul class="nav navbar-nav navbar-nav-right">
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#inicio">Inicio</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#empresa">Empresa</a></li>
-                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#interent">Internet</a></li>
+                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#internet">Internet</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#suporte">Suporte</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#contato">Contato</a></li>
                         </ul>
@@ -125,7 +125,7 @@
         </div>
     </div>
 
-    <div id="empresa">
+    <div id="internet">
         <div class="container content-sm">
             <div class="row">
                 <div class="col-sm-4">
@@ -137,13 +137,48 @@
                         <li><a href="#red" data-toggle="tab">Urbano</a></li>
                         <li><a href="#orange" data-toggle="tab">Rural</a></li>
                         <li><a href="#yellow" data-toggle="tab">Fibra</a></li>
-                        <li><a href="#green" data-toggle="tab">Green</a></li>
-                        <li><a href="#blue" data-toggle="tab">Blue</a></li>
                     </ul>
                     <div id="my-tab-content" class="tab-content">
                         <div class="tab-pane active" id="red">
-                            <h1>Red</h1>
-                            <p>red red red red red red</p>
+                            <div class="row">
+                            <div class="internet">
+                                <div class="col-sm-4">
+                                    <h2>Escolha o plano ideal para o seu você.</h2>
+                                    <p>Acesso à Internet 24 horas por dia.</p>
+                                    <p>Navegue e baixe todos os arquivos dos quais você necessitar: sem franquia e sem tarifas adicionais por tráfego.</p>
+                                    <ul>
+                                        <li>Consulte a disponibilidade dos planos na sua região</li>
+                                        <li>Valores sujeitos a alterações sem aviso prévio</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-12 cidades-uf">
+                                                <label  class="col-sm-2">Estado</label>
+                                                <div class="col-sm-4">
+                                                    <div class="iconic-input">
+                                                        <select class="form-control m-bot15" name="planos_uf" id="planos_uf" disabled>
+                                                            <option value="0">Escolha um Estado</option>
+                                                            <option value='23' >RO</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <label  class="col-sm-2">Cidade</label>
+                                                <div class="col-sm-4">
+                                                    <div class="iconic-input">
+                                                        <select class="form-control m-bot15" name="planos_cidade" id="planos_cidade" disabled>
+                                                            <option value='0'>Escolha um estado</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--// end row -->
+                            </div>
+                        </div>
                         </div>
                         <div class="tab-pane" id="orange">
                             <h1>Orange</h1>
@@ -152,14 +187,6 @@
                         <div class="tab-pane" id="yellow">
                             <h1>Yellow</h1>
                             <p>yellow yellow yellow yellow yellow</p>
-                        </div>
-                        <div class="tab-pane" id="green">
-                            <h1>Green</h1>
-                            <p>green green green green green</p>
-                        </div>
-                        <div class="tab-pane" id="blue">
-                            <h1>Blue</h1>
-                            <p>blue blue blue blue blue</p>
                         </div>
                     </div>
                 </div>

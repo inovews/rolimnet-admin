@@ -707,3 +707,19 @@ h4 {
   max-height: 100%;
   vertical-align: middle;
 }
+
+.internet .cidades-uf {
+  background: #3498db;
+  margin:15px;
+  padding:10px;
+  border-radius: 10px;
+}
+.internet .cidades-uf h1, p{
+  margin: 0;
+  padding: 0;
+  color: #3498db;
+}
+.internet .cidades-uf label{
+  color: #fff;
+  font-size: 22px;
+}
