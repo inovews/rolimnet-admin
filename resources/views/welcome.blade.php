@@ -208,6 +208,127 @@
             <!--// end row -->
         </div>
     </div>
+
+    <div id="suporte">
+        <div class="bg-color-sky-light" data-auto-height="true">
+            <div class="container content-sm">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2 class="content-heading">Suporte <span class="border-black"></span></h2>
+                    </div>
+                    <div class="col-sm-12">
+                        <form class="form-group">
+                            <div class="get-in-grid-right">
+                                <input type="text" name="nome">
+                                <input type="submit" class="btn btn-lg btn-success" value="Enviar" >
+                            </div>
+                        </form>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="panel-group" id="accordion1">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h5 class="panel-title">
+                                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_1">Lorem ipsum dolor sit amet</a>
+                                      </h5>
+                                  </div>
+                                  <div id="accordion1_1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
+                                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h5 class="panel-title">
+                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_2">Consectetur adipisicing elit</a>
+                              </h5>
+                          </div>
+                          <div id="accordion1_2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
+                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h5 class="panel-title">
+                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_3">Augue assum anteposuerit dolore</a>
+                      </h5>
+                  </div>
+                  <div id="accordion1_3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                <h5 class="panel-title">
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_4">Sollemnes in futurum</a>
+              </h5>
+          </div>
+          <div id="accordion1_4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
+          </div>
+      </div>
+  </div>
+  <div class="panel panel-default">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_5">Nostrud Tempor veniam</a>
+      </h5>
+  </div>
+  <div id="accordion1_5" class="panel-collapse collapse">
+    <div class="panel-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
+  </div>
+</div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h5 class="panel-title">
+      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_6">Ut enem magana sed dolore</a>
+  </h5>
+</div>
+<div id="accordion1_6" class="panel-collapse collapse">
+    <div class="panel-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h2 class="">Suporte</h2>
+                            </div>
+                            <div class="col-sm-8">
+                                <label>
+                                    <select class="form-control" id="cidade">
+                                        <option selected>Selecione a Cidade </option>
+                                        <option>Rolim de Moura</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div id="fibra-up">
     <div class="bg-color-orange" data-auto-height="true">
