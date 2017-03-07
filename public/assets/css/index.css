@@ -785,39 +785,6 @@ h4 {
   font-weight:400;
 }
 
-.facebook-bg {
-  background-color: #0067B0;
-}
-
-.footer .social-icons .light-icons a {
-  background-color: #3c3c3e;
-}
-
-.footer .social-icons .light-icons a:hover {
-  background-color: #353536 !important;
-}
-
-
-/* social connect icons */
-ul.social-icons li a {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  color: #fff;
-  text-align: center;
-}
-ul.social-icons li a.facebook-bg:hover, ul.social-icons li a.facebook-bg:focus {
-  background-color: #0077C0;
-}
-ul.social-icons li a i {
-  position: relative;
-  top: 8px;
-}
-
 .copyright {
   border-top: 1px solid #3f3f3f;
 }

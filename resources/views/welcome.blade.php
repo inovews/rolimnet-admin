@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/buttons/css/buttons.css">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/perfecticons/perfecticons.css" type="text/css">
+
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
     <title>Rolim Net</title>
@@ -273,8 +275,8 @@
                     <div class="col-md-4">
                         <div class="social-connect">
                             <h3>Você Conectado</h3>
-                            <ul class="list-inline social-icons">
-                                <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                            <ul class="soc">
+                                <li><a class="soc-facebook" href="#"></a></li>
                             </ul>
                         </div>
                     </div>
