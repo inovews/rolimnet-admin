@@ -117,7 +117,7 @@
                             
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button type="button" class="btn btn-lg btn-default sharp">Acessar Central</button>
+                                    <button type="button" class="btn btn-lg btn-default sharp ">Acessar Central</button>
                                 </div>
                                 <!--// end row -->
                             </div>
@@ -209,30 +209,64 @@
         </div>
     </div>
     
-    <!--<div id="fibra-up">
+    <div id="fibra-up">
     <div class="bg-color-orange" data-auto-height="true">
             <div class="container content-sm">
-                <div class="col-sm-8">
-                    <div class="media">
-                        <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="assets/img/rocket.png" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Fibra</h4>
-                            <p>Está precisando de mais velocidade?</p>
-                        </div>
-                    </div>
+                <div class="col-sm-9">
+                    <h2 class="color-white">Está precisando de velocidade? Rolim Net Fibra!...</h2>
+                    <p class="color-white">Acesso a Internet de alta velocidade com toda qualidade de rede em 100% via fibra ótica.
+Planos de acordo com a velocidade que você deseja.</p>
                 </div>
 
-                <div class="col-sm-4">
-                    <a href="#" class="btn-2 pull-right">Get Started Now</a><br>
-                    <button type="button" class="btn btn-default pull-right"> Assine já.</button>
+                <div class="col-sm-3">
+                    <p>
+                    <button type="button" class="btn btn-default btn-lg sharp pull-right">
+                            <span data-icon="&#xe008;" class="icon icon-lg"></span>  Assine já!</button>
+                        </p>
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
+
+    <div id="contato" class="text-center">
+        <div class="bg-color-sky-light" data-auto-height="true">
+            <div class="container content-sm">
+                <div class="row">
+                    <div class="col-lg-8 col-md-offset-2">
+                        <h2>Fale Conosco</h2>
+                        <p>Entre em contato com a nossa equipe</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-8 col-md-offset-2">
+                    <div class="form-wrapper marginbot-50">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="nome" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres." />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" data-rule="email" data-msg="Por favor digite um e-mail válido." />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Digite pelo menos 8 caracteres do assunto." />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="mensagem" rows="5" data-rule="required" data-msg="Por favor, escreva algo." placeholder="Mensagem"></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-block btn-success sharp">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="text-center">
+                        <p class="lead"><i class="fa fa-phone"></i> Central de Atendimento (69) 3442-2779</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div id="footer">
         <div class="footer">

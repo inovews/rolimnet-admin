@@ -797,3 +797,8 @@ h4 {
 .heart {
   color: #e74c3c;
 }
+.form-wrapper {
+  background: #404040;
+  padding: 40px;
+   border-radius: 6px;
+}
