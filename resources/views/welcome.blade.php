@@ -6,6 +6,8 @@
 
     <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/buttons/css/buttons.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
     <title>Rolim Net</title>
@@ -60,7 +62,7 @@
                         </ul>
                         <hr>
                         <h1><span>R$</span> 99,00</h1>
-                        <button type="button" class="btn btn-lg btn-warning">Assine já</button>
+                        <button type="button" class="btn btn-lg btn-warning sharp">Assine já</button>
                         <p><a href="#">Conheça outros planos</a></p>
                     </div>
                 </div>
@@ -81,7 +83,7 @@
                 </div>
                 <div class="col-sm-7">
                     <div class="empresa-img text-right">
-                        <img class="familia-img" src="assets/img/bg-familia-rolimnet-2016.jpg">
+                        <img class="img-responsive familia-img" src="assets/img/bg-familia-rolimnet-2016.jpg">
                     </div>
                 </div>
             </div>
@@ -94,7 +96,7 @@
             <div class="container content">
                 <div class="row">
                     <div class="col-sm-8">
-                        <button type="button" class="btn btn-default">Acessar o FAQ</button>
+                        <button type="button" class="btn btn-default sharp">Acessar o FAQ</button>
                         <div class="row">
                             <div class="col-sm-12">
                                 <h4 class="color-white">Perguntas Frequentes</h4>
@@ -113,7 +115,7 @@
                             
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button type="button" class="btn btn-lg btn-default">Acessar Central</button>
+                                    <button type="button" class="btn btn-lg btn-default sharp">Acessar Central</button>
                                 </div>
                                 <!--// end row -->
                             </div>
@@ -134,51 +136,51 @@
                 <div class="col-sm-12">
                     <p>A Rolim Net tem os melhores planos para você aproveitar e se divertir navegando na internet, a qualquer momento, com a melhor conexão possível.</p>
                     <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-                        <li><a href="#red" data-toggle="tab">Urbano</a></li>
+                        <li class="active"><a href="#red" data-toggle="tab">Urbano</a></li>
                         <li><a href="#orange" data-toggle="tab">Rural</a></li>
                         <li><a href="#yellow" data-toggle="tab">Fibra</a></li>
                     </ul>
                     <div id="my-tab-content" class="tab-content">
                         <div class="tab-pane active" id="red">
                             <div class="row">
-                            <div class="internet">
-                                <div class="col-sm-4">
-                                    <h2>Escolha o plano ideal para o seu você.</h2>
-                                    <p>Acesso à Internet 24 horas por dia.</p>
-                                    <p>Navegue e baixe todos os arquivos dos quais você necessitar: sem franquia e sem tarifas adicionais por tráfego.</p>
-                                    <ul>
-                                        <li>Consulte a disponibilidade dos planos na sua região</li>
-                                        <li>Valores sujeitos a alterações sem aviso prévio</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-8">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="col-sm-12 cidades-uf">
-                                                <label  class="col-sm-2">Estado</label>
-                                                <div class="col-sm-4">
-                                                    <div class="iconic-input">
-                                                        <select class="form-control m-bot15" name="planos_uf" id="planos_uf" disabled>
-                                                            <option value="0">Escolha um Estado</option>
-                                                            <option value='23' >RO</option>
-                                                        </select>
+                                <div class="internet">
+                                    <div class="col-sm-4">
+                                        <h2>Escolha o plano ideal para o seu você.</h2>
+                                        <p>Acesso à Internet 24 horas por dia.</p>
+                                        <p>Navegue e baixe todos os arquivos dos quais você necessitar: sem franquia e sem tarifas adicionais por tráfego.</p>
+                                        <ul class="nota">
+                                            <li>Consulte a disponibilidade dos planos na sua região</li>
+                                            <li>Valores sujeitos a alterações sem aviso prévio</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-12 cidades-uf">
+                                                    <label  class="col-sm-2">Estado</label>
+                                                    <div class="col-sm-4">
+                                                        <div class="iconic-input">
+                                                            <select class="form-control m-bot15" name="planos_uf" id="planos_uf" disabled>
+                                                                <option value="0">Escolha um Estado</option>
+                                                                <option value='23' >RO</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <label  class="col-sm-2">Cidade</label>
-                                                <div class="col-sm-4">
-                                                    <div class="iconic-input">
-                                                        <select class="form-control m-bot15" name="planos_cidade" id="planos_cidade" disabled>
-                                                            <option value='0'>Escolha um estado</option>
-                                                        </select>
+                                                    <label  class="col-sm-2">Cidade</label>
+                                                    <div class="col-sm-4">
+                                                        <div class="iconic-input">
+                                                            <select class="form-control m-bot15" name="planos_cidade" id="planos_cidade" disabled>
+                                                                <option value='0'>Escolha um estado</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--// end row -->
                                 </div>
-                                <!--// end row -->
                             </div>
-                        </div>
                         </div>
                         <div class="tab-pane" id="orange">
                             <h1>Orange</h1>
@@ -195,7 +197,7 @@
         </div>
     </div>
 
-    <div class="test" data-parallax="scroll" data-image-src="assets/img/1920x1080/02.jpg">
+    <div class="test" data-parallax="scroll" data-image-src="assets/img/1920x1080/04.jpg">
         <div class="container content-sm">
             <div class="row">
                 <div class="col-sm-12">
@@ -204,7 +206,95 @@
             <!--// end row -->
         </div>
     </div>
-    <br><br><br><br><br><br><br><br><br>
+    
+    <!--<div id="fibra-up">
+    <div class="bg-color-orange" data-auto-height="true">
+            <div class="container content-sm">
+                <div class="col-sm-8">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="assets/img/rocket.png" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Fibra</h4>
+                            <p>Está precisando de mais velocidade?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="#" class="btn-2 pull-right">Get Started Now</a><br>
+                    <button type="button" class="btn btn-default pull-right"> Assine já.</button>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div id="footer">
+        <div class="footer">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>Rolim Net.</h2>
+                        <p>Rolim Net Tecnologia LTDA.</p>
+                        <br>
+                        <address class="margin-bottom-30px">
+                            <ul class="list-unstyled">
+                                <li>Av. Manaus, 5095, Rolim de Moura/RO</li>
+                                <li>Fone: (69) 3442-2779</li>
+                                <li>E-mail: geral@rolimnet.com.br</li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Links</h3>
+                        <div class="row margin-bottom-30px">
+                            <div class="col-xs-6">
+                                <ul class="list-unstyled footer-nav">
+                                    <li><a href="#">Empresa</a></li>
+                                    <li><a href="#">Documentos Publicos</a></li>
+                                    <li><a href="#">FanPage</a></li>
+                                    <li><a href="#">Loja</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="list-unstyled footer-nav">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Termos</a></li>
+                                    <li><a href="#">Politicas de Privacidade</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-connect">
+                            <h3>Você Conectado</h3>
+                            <ul class="list-inline social-icons">
+                                <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="copyright">
+                            <div class="copyright-breather text-center">
+                                <img src="assets/img/logo-dark.png">
+                                <p>
+                                    Todos os direitos reservados &copy; 2016 NOC | Rolim Net.
+                                </p>
+                                <div class="credits">
+                                    <a href="#"> godoi.xyz</a>, made with <i class="fa fa-heart heart" alt="love"></i> for a better web.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/jquery.min.js" type="text/javascript"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>

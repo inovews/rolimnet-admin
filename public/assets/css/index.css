@@ -136,6 +136,9 @@ h4 {
   background: #3498db !important;
 }
 
+.bg-color-orange {
+  background: #eb8f34 !important;
+}
 
 .bg-color-heading {
   background: #515769 !important;
@@ -708,18 +711,122 @@ h4 {
   vertical-align: middle;
 }
 
+
+/*------------------------------------------------------------------
+    [Internet]
+------------------------------------------------------------------*/
+
 .internet .cidades-uf {
   background: #3498db;
   margin:15px;
   padding:10px;
   border-radius: 10px;
 }
-.internet .cidades-uf h1, p{
+
+.internet .cidades-uf p{
   margin: 0;
   padding: 0;
   color: #3498db;
 }
+
 .internet .cidades-uf label{
   color: #fff;
   font-size: 22px;
+}
+
+.internet .nota {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  color: #fff;
+}
+
+.internet .nota li {
+  padding-left: 15px !important;
+  position: relative;
+  display: block;
+  margin-bottom: 6px !important;
+  line-height: 20px;
+}
+
+.internet .nota li:before {
+  font-family: 'Hind';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: ">";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  color: #ea8e05;
+}
+
+.fibra-up {
+  background: #eb8f34;
+}
+
+.footer{
+   padding-top: 30px;
+  width:100%;
+}
+
+.footer-content{
+  padding:10px 0 0;
+  border-top:1px solid #dfe3e4;
+  font-weight:400;
+}
+
+.facebook-bg {
+  background-color: #0067B0;
+}
+
+.footer .social-icons .light-icons a {
+  background-color: #3c3c3e;
+}
+
+.footer .social-icons .light-icons a:hover {
+  background-color: #353536 !important;
+}
+
+
+/* social connect icons */
+ul.social-icons li a {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+ul.social-icons li a.facebook-bg:hover, ul.social-icons li a.facebook-bg:focus {
+  background-color: #0077C0;
+}
+ul.social-icons li a i {
+  position: relative;
+  top: 8px;
+}
+
+.copyright {
+  border-top: 1px solid #3f3f3f;
+}
+
+.copyright-breather {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.heart {
+  color: #e74c3c;
 }
