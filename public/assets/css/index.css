@@ -681,20 +681,13 @@ h4 {
   padding: 40px;
    border-radius: 6px;
 }
-.get-in-grids{
-  padding: 50px 0;
-}
 
-.get-in-grid-left p{
-  font-size: 1.8em;
-    color: #1ACAB8;
-    margin: 4px 0 0;
-    text-align: center;
-}
+
 .get-in-grid-right {
   background: #f2f2f2;
-  padding: 28px;
+  padding: 20px;
 }
+
 .get-in-grid-right input[type="text"]{
   outline:none;
   color:#999;
@@ -704,6 +697,7 @@ h4 {
   background:#fff;
   border:1px solid #e1e1e1;
 }
+
 .get-in-grid-right input[type="submit"]{ 
   width:15%;
   font-size:15px;
@@ -713,6 +707,7 @@ h4 {
 .panel-group {
   padding-top: 50px;
 }
+
 .panel-default {
   border-radius: 0;
   border: none;
@@ -720,24 +715,29 @@ h4 {
   margin-bottom: 0;
   padding-bottom: 14px;
 }
+
 .panel-default > .panel-heading {
   border: none;
   background: none;
   padding: 0;
 }
+
 .panel-default > .panel-heading + .panel-collapse .panel-body {
   border: none;
   padding: 0 0 0 32px;
 }
+
 .panel-default h5 {
   font: 300 19px 'Hind', Arial, sans-serif;
   /*font-family: 300 19px 'Hind';*/
   padding: 0;
   margin: 0 0 5px;
 }
+
 .panel-group .panel+.panel {
   margin-top: 15px;
 }
+
 .panel-default .accordion-toggle:before {
   width: 21px;
   height: 21px;
@@ -749,6 +749,7 @@ h4 {
   position: relative;
   top: 4px;
 }
+
 .panel-default .collapsed:before {
   font-family: FontAwesome;
   content: "\f055";
@@ -763,9 +764,21 @@ h4 {
   color: #0099cc;
   text-decoration: none;
 }
+
 .panel-default .collapsed {
   color: #515769;
 }
+
+.atendimento select{
+  outline:none;
+  font-size:14px;
+  width:98%;
+  height: 10%;
+  padding:13px 10px;
+  background:#fff;
+  border:1px solid #e1e1e1;
+}
+
 
 .atendimento-cidade {
 background: #f2f2f2;

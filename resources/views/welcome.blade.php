@@ -249,10 +249,38 @@
         </div>
     </div>
 
-    <div class="test" data-parallax="scroll" data-image-src="assets/img/1920x1080/04.jpg">
+    <div class="test" data-parallax="scroll" data-image-src="assets/img/img-bg-2.jpg">
+    <!-- http://www.flaticon.com/packs/web-navigation-line-craft -->
         <div class="container content-sm">
             <div class="row">
                 <div class="col-sm-12">
+                    <div class="col-sm-4">
+                        <div class="feature feature-1 text-center">
+                            <img src="assets/img/favorites-button.png">
+                            <h3>16,000+</h3>
+                            <span>
+                                Customers strong
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature feature-1 text-center">
+                            <img src="assets/img/history-button.png">
+                            <h3>24/7/365</h3>
+                            <span>
+                                Customers strong
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature feature-1 text-center">
+                            <img src="assets/img/compass.png">
+                            <h3>Internet com mais velocidade.</h3>
+                            <span>
+                                E muito mais vantagens.
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--// end row -->
@@ -268,9 +296,20 @@
                     </div>
                     <div class="col-sm-12">
                         <form class="form-group">
-                            <div class="get-in-grid-right">
-                                <input type="text" name="nome">
-                                <input type="submit" class="btn btn-lg btn-success" value="Enviar" >
+                            <div class="row">
+                                <div class="get-in-grid-right">
+                                    <div class="col-sm-4">
+                                        <div class="input-with-icon">
+                                            <input id="" name="nome" type="text" placeholder="Seu Nome" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-with-icon">
+                                            <input id="" name="telefone" type="text" placeholder="Seu Telefone" />
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="btn btn-lg btn-success" value="Enviar" >
+                                </div>
                             </div>
                         </form>
                         <div class="col-sm-12">
@@ -345,7 +384,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h5 class="panel-title">
-                                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_6">Qual o prazo para o atendimento de uma chamado técnica?</a>
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_6">Qual o prazo para o atendimento de uma chamado técnico?</a>
                                             </h5>
                                         </div>
                                         <div id="accordion1_6" class="panel-collapse collapse">
