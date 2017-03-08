@@ -48,7 +48,7 @@
         </nav>
     </header>
 
-    <div class="banner-index" data-parallax="scroll" data-image-src="assets/img/1920x1080/02.jpg">
+    <div class="banner-index" data-parallax="scroll" data-image-src="assets/img/1920x1080/04.jpg">
         <div class="container content-sm">
             <div class="row">
                 <div class="col-sm-6">

@@ -428,7 +428,7 @@ h4 {
 .banner-index .logo-rolimnet-fibra {
     position: relative;
     height: 300px;
-    width: 300px;
+    width: 350px;
     vertical-align: bottom;
 }
 
@@ -677,7 +677,7 @@ h4 {
   color: #e74c3c;
 }
 .form-wrapper {
-  background: #404040;
+  background: #737373;
   padding: 40px;
    border-radius: 6px;
 }
