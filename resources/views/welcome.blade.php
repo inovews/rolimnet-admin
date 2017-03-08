@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/perfecticons/perfecticons.css" type="text/css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
     <title>Rolim Net</title>
 </head>
@@ -103,8 +104,8 @@
                             <div class="col-sm-12">
                                 <h4 class="color-white">Perguntas Frequentes</h4>
                                 <ul class="centraldocliente">
-                                    <li><a class="color-white" href="#">Segunda vida da Fatura.</a></li>
-                                    <li><a class="color-white"href="#">Acabou o carne.</a></li>
+                                    <li><a class="color-white" href="#">Solicitar a 2º via da Fatura.</a></li>
+                                    <li><a class="color-white"href="#">Não recebi a fatura/carne para pagamento. O que devo fazer?</a></li>
                                     <li><a class="color-white" href="#">Como cancelar minha assinatura.</a></li>
                                 </ul>
                             </div>
@@ -163,7 +164,7 @@
                                                     <div class="col-sm-4">
                                                         <div class="iconic-input">
                                                             <select class="form-control m-bot15" name="planos_uf" id="planos_uf" disabled>
-                                                                <option value="0">Escolha um Estado</option>
+                                                                <option value="0">Selecione o Estado</option>
                                                                 <option value='23' >RO</option>
                                                             </select>
                                                         </div>
@@ -172,7 +173,7 @@
                                                     <div class="col-sm-4">
                                                         <div class="iconic-input">
                                                             <select class="form-control m-bot15" name="planos_cidade" id="planos_cidade" disabled>
-                                                                <option value='0'>Escolha um estado</option>
+                                                                <option value='0'>Selecione a Cidade</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -227,103 +228,109 @@
                             <div class="row">
                                 <div class="panel-group" id="accordion1">
                                     <div class="panel panel-default">
-                                      <div class="panel-heading">
-                                        <h5 class="panel-title">
-                                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_1">Lorem ipsum dolor sit amet</a>
-                                      </h5>
-                                  </div>
-                                  <div id="accordion1_1" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
-                                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="panel panel-default">
-                              <div class="panel-heading">
-                                <h5 class="panel-title">
-                                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_2">Consectetur adipisicing elit</a>
-                              </h5>
-                          </div>
-                          <div id="accordion1_2" class="panel-collapse collapse">
-                            <div class="panel-body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
-                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h5 class="panel-title">
-                          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_3">Augue assum anteposuerit dolore</a>
-                      </h5>
-                  </div>
-                  <div id="accordion1_3" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                <h5 class="panel-title">
-                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_4">Sollemnes in futurum</a>
-              </h5>
-          </div>
-          <div id="accordion1_4" class="panel-collapse collapse">
-            <div class="panel-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
-          </div>
-      </div>
-  </div>
-  <div class="panel panel-default">
-      <div class="panel-heading">
-        <h5 class="panel-title">
-          <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_5">Nostrud Tempor veniam</a>
-      </h5>
-  </div>
-  <div id="accordion1_5" class="panel-collapse collapse">
-    <div class="panel-body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
-  </div>
-</div>
-</div>
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h5 class="panel-title">
-      <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_6">Ut enem magana sed dolore</a>
-  </h5>
-</div>
-<div id="accordion1_6" class="panel-collapse collapse">
-    <div class="panel-body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam quis nostrud exercitation dolore magna ullamco.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sed eiusmod tempor ut labore et dolore.</p>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <h2 class="">Suporte</h2>
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_1">Quero contratar internet Rolim Net Rádio</a>
+                                            </h5>
+                                        </div>
+                                        <div id="accordion1_1" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>Consulte em nosso site a área de cobertura de internet via rádio. Caso seu município/localidade tenha cobertura de sinal, você pode contatar conosco diretamente pelo site, ou se preferir, ligue para a Rolim Net.</p>
+                                                <p>A contratação dos planos é feita mediante teste de sinal.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_2">Quero contratar internet Rolim Net Fibra</a>
+                                            </h5>
+                                        </div>
+                                        <div id="accordion1_2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>Consulte em nosso site a área de cobertura de internet via fibra. Caso esteja dentro da área com internet Triway, você pode contatar conosco diretamente pelo site, ou se preferir, ligue para a Rolim Net. Os consultores de vendas da Rolim Net entrarão em contato para lhe auxiliar na escolha do melhor plano.</p>
+                                                <p>Antes da instalação, serão feitos testes técnicos para confirmar a disponibilidade do serviço.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_3">Meu município não está na área de cobertura Rolim Net. O que posso fazer?</a>
+                                            </h5>
+                                        </div>
+                                        <div id="accordion1_3" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>Você pode informar seu interesse em ter internet Rolim Net diretamente pelo site. Nossa área de cobertura, tanto de internet via fibra como internet via rádio, será ampliada conforme demanda, garantindo a viabilidade do sistema sem redução de qualidade.</p>
+                                                <p>Existe também a possibilidade de instalação de torres para internet via rádio sob demanda.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_4">Não recebi a fatura/carne para pagamento. O que devo fazer?</a>
+                                            </h5>
+                                        </div>
+                                        <div id="accordion1_4" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>Você pode ligar para o Rolim Net, pelo telefone 69 3442-2779, e solicitar o carne para pagamento ou uma segunda via da fatura, que poderá ser enviada para seu e-mail.</p>
+                                                <p>Se preferir, acesse a nossa central de atendimento no site.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_5">Testei minha velocidade e ela está abaixo do contratado, como medidir minha velocidade corretamente?</a>
+                                            </h5>
+                                        </div>
+                                        <div id="accordion1_5" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>Grande parte dos medidores de velocidade disponíveis na internet faz o teste da conexão do usuário através da média da velocidade de download de um arquivo. Porém, esse resultado pode ser afetado por vários fatores como a velocidade disponível no servidor do site e a quantidade de acessos simultâneos no momento do teste. Além disso, muitos destes medidores limitam a velocidade máxima de download ou simplesmente possuem conexão com a internet em velocidade inferior a que você tem com a Rolim Net.</p>
+                                                <p>Por isso, disponibilizamos em nosso site um medidor de velocidade.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h5 class="panel-title">
+                                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_6">Qual o prazo para o atendimento de uma chamado técnica?</a>
+                                            </h5>
+                                        </div>
+                                        <div id="accordion1_6" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>Quando o assinante entra em contato com a Rolim Net relatando problemas em sua conexão é transferido para um atendente técnico que vai orientá-lo a fim de detectar a causa. Não sendo possível a solução por telefone, a Rolim Net tem até 72h, contando apenas dias úteis, para realizar o atendimento técnico presencial.</p>
+                                                <p>Seu problema não foi solucionado? Entre em contato com a ouvidoria aqui.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-8">
-                                <label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="atendimento">
+                                <div class="col-sm-4">
+                                    <h2 class="">Atendimento</h2>
+                                </div>
+                                <div class="col-sm-8">
                                     <select class="form-control" id="cidade">
                                         <option selected>Selecione a Cidade </option>
                                         <option>Rolim de Moura</option>
                                     </select>
-                                </label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
+                        <div class="atendimento-cidade">
+                            <h3>Rolim Net</h3>
+                            <span>Telefones: 69 3442-2779</span>
+                            <span>Endereço: Av. Manaus, 5095, Centro</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -419,9 +426,7 @@ Planos de acordo com a velocidade que você deseja.</p>
                             </div>
                             <div class="col-xs-6">
                                 <ul class="list-unstyled footer-nav">
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Termos</a></li>
-                                    <li><a href="#">Politicas de Privacidade</a></li>
+                                    <li><a href="#">Perguntas Frequentes</a></li>
                                     <li><a href="#">Contato</a></li>
                                 </ul>
                             </div>
