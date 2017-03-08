@@ -15,7 +15,7 @@
 
     <title>Rolim Net</title>
 </head>
-<body>
+<body id="inicio">
     <header class="header navbar-fixed-top">
         <nav class="navbar" role="navigation">
             <div class="container">
@@ -26,7 +26,7 @@
                     </button>
 
                     <div class="logo">
-                        <a class="logo-wrap" href="#body">
+                        <a class="logo-wrap" href="#inicio">
                             <img class="logo-img logo-img-main" src="assets/img/logo.png" alt="Rolim Net Logo">
                             <img class="logo-img logo-img-active" src="assets/img/logo-dark.png" alt="Rolim Net Logo">
                         </a>
@@ -52,21 +52,70 @@
         <div class="container content-sm">
             <div class="row">
                 <div class="col-sm-6">
+                <div class="logo-rolimnet-fibra pull-right">
+                        <img class="img-responsive" src="assets/img/logo-rolimnet-fibra.png">
+                    </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="planos">
-                        <h2 class="banner-index-planos">3mega DE INTERNET</h2>
-                        <h2 class="banner-index-velocidade">3072k/1024k</h2>
-                        <p class="banner-index-down-up">down/up</p>
-                        
-                        <ul class="text">
-                            <li class="color-white" >Sem limite de navegação</li>
-                            <li class="color-white" >Cobertura fibra óptica</li>
-                        </ul>
-                        <hr>
-                        <h1><span>R$</span> 99,00</h1>
-                        <button type="button" class="btn btn-lg btn-warning sharp">Assine já</button>
-                        <p><a href="#">Conheça outros planos</a></p>
+                    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#bs-carousel" data-slide-to="1"></li>
+                            <li data-target="#bs-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item slides active">
+                                <div class="slide-1"></div>
+                                <div class="planos">
+                                    <h2 class="banner-index-planos">3mega DE INTERNET</h2>
+                                    <h2 class="banner-index-velocidade">3072k/1024k</h2>
+                                    <p class="banner-index-down-up">down/up</p>
+
+                                    <ul class="text">
+                                        <li class="color-white" >Sem limite de navegação</li>
+                                        <li class="color-white" >Cobertura fibra óptica</li>
+                                    </ul>
+                                    <hr>
+                                    <h1><span>R$</span> 99,00</h1>
+                                    <button type="button" class="btn btn-lg btn-warning sharp">Assine já</button>
+                                    <p><a href="#">Conheça outros planos</a></p>
+                                </div>
+                            </div>
+                            <div class="item slides">
+                                <div class="slide-2"></div>
+                                <div class="planos">
+                                    <h2 class="banner-index-planos">3mega DE INTERNET</h2>
+                                    <h2 class="banner-index-velocidade">3072k/1024k</h2>
+                                    <p class="banner-index-down-up">down/up</p>
+
+                                    <ul class="text">
+                                        <li class="color-white" >Sem limite de navegação</li>
+                                        <li class="color-white" >Cobertura fibra óptica</li>
+                                    </ul>
+                                    <hr>
+                                    <h1><span>R$</span> 99,00</h1>
+                                    <button type="button" class="btn btn-lg btn-warning sharp">Assine já</button>
+                                    <p><a href="#">Conheça outros planos</a></p>
+                                </div>
+                            </div>
+                            <div class="item slides">
+                                <div class="slide-3"></div>
+                                <div class="planos">
+                                    <h2 class="banner-index-planos">3mega DE INTERNET</h2>
+                                    <h2 class="banner-index-velocidade">3072k/1024k</h2>
+                                    <p class="banner-index-down-up">down/up</p>
+
+                                    <ul class="text">
+                                        <li class="color-white" >Sem limite de navegação</li>
+                                        <li class="color-white" >Cobertura fibra óptica</li>
+                                    </ul>
+                                    <hr>
+                                    <h1><span>R$</span> 99,00</h1>
+                                    <button type="button" class="btn btn-lg btn-warning sharp">Assine já</button>
+                                    <p><a href="#">Conheça outros planos</a></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -338,131 +387,131 @@
     </div>
     
     <div id="fibra-up">
-    <div class="bg-color-orange" data-auto-height="true">
+        <div class="bg-color-orange" data-auto-height="true">
             <div class="container content-sm">
                 <div class="col-sm-9">
                     <h2 class="color-white">Está precisando de velocidade? Rolim Net Fibra!...</h2>
                     <p class="color-white">Acesso a Internet de alta velocidade com toda qualidade de rede em 100% via fibra ótica.
-Planos de acordo com a velocidade que você deseja.</p>
-                </div>
-
-                <div class="col-sm-3">
-                    <p>
-                    <button type="button" class="btn btn-default btn-lg sharp pull-right">
-                            <span data-icon="&#xe008;" class="icon icon-lg"></span>  Assine já!</button>
-                        </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="contato" class="text-center">
-        <div class="bg-color-sky-light" data-auto-height="true">
-            <div class="container content-sm">
-                <div class="row">
-                    <div class="col-lg-8 col-md-offset-2">
-                        <h2>Fale Conosco</h2>
-                        <p>Entre em contato com a nossa equipe</p>
+                        Planos de acordo com a velocidade que você deseja.</p>
                     </div>
 
+                    <div class="col-sm-3">
+                        <p>
+                            <button type="button" class="btn btn-default btn-lg sharp pull-right">
+                                <span data-icon="&#xe008;" class="icon icon-lg"></span>  Assine já!</button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-8 col-md-offset-2">
-                    <div class="form-wrapper marginbot-50">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="nome" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres." />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" data-rule="email" data-msg="Por favor digite um e-mail válido." />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Digite pelo menos 8 caracteres do assunto." />
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="mensagem" rows="5" data-rule="required" data-msg="Por favor, escreva algo." placeholder="Mensagem"></textarea>
+            </div>
+
+            <div id="contato" class="text-center">
+                <div class="bg-color-sky-light" data-auto-height="true">
+                    <div class="container content-sm">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-offset-2">
+                                <h2>Fale Conosco</h2>
+                                <p>Entre em contato com a nossa equipe</p>
                             </div>
 
+                        </div>
+                        <div class="col-sm-8 col-md-offset-2">
+                            <div class="form-wrapper marginbot-50">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="nome" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres." />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" data-rule="email" data-msg="Por favor digite um e-mail válido." />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="subject" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Digite pelo menos 8 caracteres do assunto." />
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="mensagem" rows="5" data-rule="required" data-msg="Por favor, escreva algo." placeholder="Mensagem"></textarea>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-block btn-success sharp">Enviar Mensagem</button>
+                                    </div>
+                                </form>
+                            </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-block btn-success sharp">Enviar Mensagem</button>
+                                <p class="lead"><i class="fa fa-phone"></i> Central de Atendimento (69) 3442-2779</p>
                             </div>
-                        </form>
-                    </div>
-                    <div class="text-center">
-                        <p class="lead"><i class="fa fa-phone"></i> Central de Atendimento (69) 3442-2779</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
-    <div id="footer">
-        <div class="footer">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h2>Rolim Net.</h2>
-                        <p>Rolim Net Tecnologia LTDA.</p>
-                        <br>
-                        <address class="margin-bottom-30px">
-                            <ul class="list-unstyled">
-                                <li>Av. Manaus, 5095, Rolim de Moura/RO</li>
-                                <li>Fone: (69) 3442-2779</li>
-                                <li>E-mail: geral@rolimnet.com.br</li>
-                            </ul>
-                        </address>
-                    </div>
-                    <div class="col-sm-4">
-                        <h3>Links</h3>
-                        <div class="row margin-bottom-30px">
-                            <div class="col-xs-6">
-                                <ul class="list-unstyled footer-nav">
-                                    <li><a href="#">Empresa</a></li>
-                                    <li><a href="#">Documentos Publicos</a></li>
-                                    <li><a href="#">FanPage</a></li>
-                                    <li><a href="#">Loja</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                </ul>
+            <div id="footer">
+                <div class="footer">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h2>Rolim Net.</h2>
+                                <p>Rolim Net Tecnologia LTDA.</p>
+                                <br>
+                                <address class="margin-bottom-30px">
+                                    <ul class="list-unstyled">
+                                        <li>Av. Manaus, 5095, Rolim de Moura/RO</li>
+                                        <li>Fone: (69) 3442-2779</li>
+                                        <li>E-mail: geral@rolimnet.com.br</li>
+                                    </ul>
+                                </address>
                             </div>
-                            <div class="col-xs-6">
-                                <ul class="list-unstyled footer-nav">
-                                    <li><a href="#">Perguntas Frequentes</a></li>
-                                    <li><a href="#">Contato</a></li>
-                                </ul>
+                            <div class="col-sm-4">
+                                <h3>Links</h3>
+                                <div class="row margin-bottom-30px">
+                                    <div class="col-xs-6">
+                                        <ul class="list-unstyled footer-nav">
+                                            <li><a href="#">Empresa</a></li>
+                                            <li><a href="#">Documentos Publicos</a></li>
+                                            <li><a href="#">FanPage</a></li>
+                                            <li><a href="#">Loja</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <ul class="list-unstyled footer-nav">
+                                            <li><a href="#">Perguntas Frequentes</a></li>
+                                            <li><a href="#">Contato</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="social-connect">
-                            <h3>Você Conectado</h3>
-                            <ul class="soc">
-                                <li><a class="soc-facebook" href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="copyright">
-                            <div class="copyright-breather text-center">
-                                <img src="assets/img/logo-dark.png">
-                                <p>
-                                    Todos os direitos reservados &copy; 2016 NOC | Rolim Net.
-                                </p>
-                                <div class="credits">
-                                    <a href="#"> godoi.xyz</a>, made with <i class="fa fa-heart heart" alt="love"></i> for a better web.
+                            <div class="col-md-4">
+                                <div class="social-connect">
+                                    <h3>Você Conectado</h3>
+                                    <ul class="soc">
+                                        <li><a class="soc-facebook" href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="copyright">
+                                    <div class="copyright-breather text-center">
+                                        <img src="assets/img/logo-dark.png">
+                                        <p>
+                                            Todos os direitos reservados &copy; 2016 NOC | Rolim Net.
+                                        </p>
+                                        <div class="credits">
+                                            <a href="#"> godoi.xyz</a>, made with <i class="fa fa-heart heart" alt="love"></i> for a better web.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="assets/js/jquery.parallax.min.js" type="text/javascript"></script>
+            <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+            <script src="assets/js/jquery.parallax.min.js" type="text/javascript"></script>
 
-    <script src="assets/js/index.js" type="text/javascript"></script>
+            <script src="assets/js/index.js" type="text/javascript"></script>
 
-</body>
-</html>
+        </body>
+        </html>

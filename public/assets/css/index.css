@@ -96,7 +96,7 @@ h4 {
 }
 
 .color-blue {
-  color: #3498db !important;
+  color: #0099cc !important;
 }
 
 .color-heading {
@@ -133,7 +133,7 @@ h4 {
 }
 
 .bg-color-blue {
-  background: #3498db !important;
+  background: #0099cc !important;
 }
 
 .bg-color-orange {
@@ -425,6 +425,17 @@ h4 {
   padding: 0;
   margin: 0;
 }
+.banner-index .logo-rolimnet-fibra {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    vertical-align: bottom;
+}
+
+.banner-index .logo-rolimnet-fibra img {
+    position: absolute;
+    bottom: 0;
+}
 
 .banner-index .banner-index-planos {
   font-size: 48px;
@@ -585,7 +596,7 @@ h4 {
 ------------------------------------------------------------------*/
 
 .internet .cidades-uf {
-  background: #3498db;
+  background: #0099cc;
   margin:15px;
   padding:10px;
   border-radius: 10px;
@@ -719,7 +730,8 @@ h4 {
   padding: 0 0 0 32px;
 }
 .panel-default h5 {
-  font: 300 19px "Open Sans", Arial, sans-serif;
+  font: 300 19px 'Hind', Arial, sans-serif;
+  /*font-family: 300 19px 'Hind';*/
   padding: 0;
   margin: 0 0 5px;
 }
@@ -731,7 +743,7 @@ h4 {
   height: 21px;
   display: inline-block;
   font-family: FontAwesome;
-  content: "\f055";
+  content: "\f056";
   border-radius: 50%;
   margin-right: 10px;
   position: relative;
@@ -739,7 +751,7 @@ h4 {
 }
 .panel-default .collapsed:before {
   font-family: FontAwesome;
-  content: "\f056";
+  content: "\f055";
 }
 /*.panel-default .panel-title:hover .collapsed:before {
   background-color: #e54a1a;
@@ -748,14 +760,18 @@ h4 {
 .panel-default .accordion-toggle:focus,
 .panel-default .accordion-toggle:hover,
 .panel-default .accordion-toggle:active {
-  color: #1ea9e3;
+  color: #0099cc;
   text-decoration: none;
 }
 .panel-default .collapsed {
-  color: #5f6f7e;
+  color: #515769;
 }
 
 .atendimento-cidade {
 background: #f2f2f2;
   padding:10px;
+}
+
+.carousel-indicators {
+  bottom: 0;
 }
