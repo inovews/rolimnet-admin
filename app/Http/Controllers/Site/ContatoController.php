@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Photo;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class EmpresaController extends Controller
+class ContatoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +15,7 @@ class EmpresaController extends Controller
     public function index()
     {
         //
-        return view('site.empresa.index');
+        return view('site.contato.index');
     }
 
     /**
@@ -43,10 +42,10 @@ class EmpresaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Photo  $photo
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Photo $photo)
+    public function show($id)
     {
         //
     }
@@ -54,10 +53,10 @@ class EmpresaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Photo  $photo
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Photo $photo)
+    public function edit($id)
     {
         //
     }
@@ -66,10 +65,10 @@ class EmpresaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Photo  $photo
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Photo $photo)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -77,10 +76,10 @@ class EmpresaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Photo  $photo
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Photo $photo)
+    public function destroy($id)
     {
         //
     }

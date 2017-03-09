@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('/empresa', 'Site\EmpresaController');
+Route::resource('/contato', 'Site\ContatoController');
