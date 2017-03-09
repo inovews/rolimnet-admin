@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Site;
 
 use App\Photo;
 use Illuminate\Http\Request;
@@ -16,7 +16,7 @@ class EmpresaController extends Controller
     public function index()
     {
         //
-        return view('admin.index');
+        return view('empresa.index');
     }
 
     /**

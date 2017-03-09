@@ -412,7 +412,7 @@
                                         </div>
                                         <div id="accordion1_2" class="panel-collapse collapse">
                                             <div class="panel-body">
-                                                <p>Consulte em nosso site a área de cobertura de internet via fibra. Caso esteja dentro da área com internet Triway, você pode contatar conosco diretamente pelo site, ou se preferir, ligue para a Rolim Net. Os consultores de vendas da Rolim Net entrarão em contato para lhe auxiliar na escolha do melhor plano.</p>
+                                                <p>Consulte em nosso site a área de cobertura de internet via fibra. Caso esteja dentro da área com internet, você pode contatar conosco diretamente pelo site, ou se preferir, ligue para a Rolim Net. Os consultores de vendas da Rolim Net entrarão em contato para lhe auxiliar na escolha do melhor plano.</p>
                                                 <p>Antes da instalação, serão feitos testes técnicos para confirmar a disponibilidade do serviço.</p>
                                             </div>
                                         </div>
