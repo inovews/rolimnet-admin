@@ -136,7 +136,7 @@
                     <div class="text-center sm-text-left">
                         <h1 class="color-blue margin-b-0">Bem-Vindo!</h1>
                         <p>A Rolim Net surgiu no ano de 2008, hoje tem presença em mais de 10 cidades e várias Linhas na Zona da Mata. A Rolim Net é ganhadora do Troféu ACIRM dos anos de 2010, 2012, 2013, 2014 e 2015.</p>
-                        <p class="text-right"><a href="#" class="color-blue">...mais sobre a empresa</a></p>
+                        <p class="text-right"><a href="{{ url('empresa') }}" class="color-blue">...mais sobre a empresa</a></p>
                     </div>
                 </div>
                 <div class="col-sm-7">
@@ -584,7 +584,7 @@
                             <div class="col-sm-4 sm-margin-b-40">
                                 <h3>Links</h3>
                                 <div class="row">
-                                    <div class="col-md-4 col-xs-6 md-margin-b-40">
+                                    <div class="col-md-6 col-xs-6 md-margin-b-40">
                                         <ul class="list-unstyled footer-nav">
                                             <li><a href="#">Empresa</a></li>
                                             <li><a href="#">Documentos Publicos</a></li>
@@ -593,7 +593,7 @@
                                             <li><a href="#">Blog</a></li>
                                         </ul>
                                     </div>
-                                    <div class="col-md-4 col-xs-6 md-margin-b-40">
+                                    <div class="col-md-6 col-xs-6 md-margin-b-40">
                                         <ul class="list-unstyled footer-nav">
                                             <li><a href="#">Perguntas Frequentes</a></li>
                                             <li><a href="#">Contato</a></li>
