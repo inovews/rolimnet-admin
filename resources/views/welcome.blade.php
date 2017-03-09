@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
 
     <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
@@ -14,8 +18,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
     <title>Rolim Net</title>
+
+    <link rel="shortcut icon" href="favicon.ico"/>
 </head>
-<body id="inicio">
+<body id="body" data-spy="scroll" data-target=".header">
     <header class="header navbar-fixed-top">
         <nav class="navbar" role="navigation">
             <div class="container">
@@ -26,7 +32,7 @@
                     </button>
 
                     <div class="logo">
-                        <a class="logo-wrap" href="#inicio">
+                        <a class="logo-wrap" href="#body">
                             <img class="logo-img logo-img-main" src="assets/img/logo.png" alt="Rolim Net Logo">
                             <img class="logo-img logo-img-active" src="assets/img/logo-dark.png" alt="Rolim Net Logo">
                         </a>
@@ -36,7 +42,7 @@
                 <div class="collapse navbar-collapse nav-collapse">
                     <div class="menu-container">
                         <ul class="nav navbar-nav navbar-nav-right">
-                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#inicio">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#body">Inicio</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#empresa">Empresa</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#internet">Internet</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#suporte">Suporte</a></li>
@@ -135,7 +141,7 @@
                 </div>
                 <div class="col-sm-7">
                     <div class="empresa-img text-right">
-                        <img class="img-responsive familia-img" src="assets/img/bg-familia-rolimnet-2016.jpg">
+                        <img class="full-width img-responsive familia-img" src="assets/img/bg-familia-rolimnet-2016.jpg">
                     </div>
                 </div>
             </div>
@@ -167,7 +173,7 @@
                             
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button type="button" class="btn btn-lg btn-default sharp ">Acessar Central</button>
+                                    <button type="button" class="btn btn-lg btn-default raised">Acessar Central</button>
                                 </div>
                                 <!--// end row -->
                             </div>
@@ -212,7 +218,7 @@
                                                     <label  class="col-sm-2">Estado</label>
                                                     <div class="col-sm-4">
                                                         <div class="iconic-input">
-                                                            <select class="form-control m-bot15" name="planos_uf" id="planos_uf" disabled>
+                                                            <select class="form-control m-bot15" name="planos_uf" id="planos_uf">
                                                                 <option value="0">Selecione o Estado</option>
                                                                 <option value='23' >RO</option>
                                                             </select>
@@ -221,7 +227,7 @@
                                                     <label  class="col-sm-2">Cidade</label>
                                                     <div class="col-sm-4">
                                                         <div class="iconic-input">
-                                                            <select class="form-control m-bot15" name="planos_cidade" id="planos_cidade" disabled>
+                                                            <select class="form-control m-bot15" name="planos_cidade" id="planos_cidade">
                                                                 <option value='0'>Selecione a Cidade</option>
                                                             </select>
                                                         </div>
@@ -229,6 +235,75 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-sm-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 md-margin-b-30">
+                                                        <!-- Pricing List v4 -->
+                                                        <div class="pricing-list-v4 radius-10">
+                                                            <div class="pricing-list-v4-header">
+                                                            <h4 class="pricing-list-v4-title">3mega</h4>
+                                                                <span class="pricing-list-v4-subtitle">Urbano</span>
+                                                            </div>
+                                                            <div class="pricing-list-v4-content">
+                                                                <div class="margin-b-40">
+                                                                    <span class="pricing-list-v4-price-sign">R$</span>
+                                                                    <span class="pricing-list-v4-price">99,</span>
+                                                                    <span class="pricing-list-v4-subprice">00</span>
+                                                                    <span class="pricing-list-v4-price-info">mês</span>
+                                                                </div>
+                                                                <div class="">
+                                                                    <button type="button" class="btn btn-primary raised">Assinar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End Pricing List v4 -->
+                                                    </div>
+                                                    <div class="col-md-4 md-margin-b-30">
+                                                        <!-- Pricing List v4 -->
+                                                        <div class="pricing-list-v4 radius-10">
+                                                            <div class="pricing-list-v4-header">
+                                                                <h4 class="pricing-list-v4-title">5mega</h4>
+                                                                <span class="pricing-list-v4-subtitle">Urbano</span>
+                                                            </div>
+                                                            <div class="pricing-list-v4-content">
+                                                                <div class="margin-b-40">
+                                                                    <span class="pricing-list-v4-price-sign">R$</span>
+                                                                    <span class="pricing-list-v4-price">149,</span>
+                                                                    <span class="pricing-list-v4-subprice">00</span>
+                                                                    <span class="pricing-list-v4-price-info">mês</span>
+                                                                </div>
+                                                                <div class="center-block">
+                                                                    <button type="button" class="btn btn-primary raised">Assinar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End Pricing List v4 -->
+                                                    </div>
+                                                    <div class="col-md-4 md-margin-b-30">
+                                                        <!-- Pricing List v4 -->
+                                                        <div class="pricing-list-v4 radius-10">
+                                                            <div class="pricing-list-v4-header">
+                                                                <h4 class="pricing-list-v4-title">10mega</h4>
+                                                                <span class="pricing-list-v4-subtitle">Urbano</span>
+                                                            </div>
+                                                            <div class="pricing-list-v4-content">
+                                                                <div class="margin-b-40">
+                                                                    <span class="pricing-list-v4-price-sign">R$</span>
+                                                                    <span class="pricing-list-v4-price">199,</span>
+                                                                    <span class="pricing-list-v4-subprice">00</span>
+                                                                    <span class="pricing-list-v4-price-info">mês</span>
+                                                                </div>
+                                                                <div class="center-block">
+                                                                    <button type="button" class="btn btn-primary raised">Assinar</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End Pricing List v4 -->
+                                                    </div>
+                                                </div>
+                                                <!--// end row -->
+                                        </div>
+                                        <!-- End Pricing List v4 -->
                                     </div>
                                     <!--// end row -->
                                 </div>
@@ -255,28 +330,28 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="col-sm-4">
-                        <div class="feature feature-1 text-center">
+                        <div class="text-center">
                             <img src="assets/img/favorites-button.png">
-                            <h3>16,000+</h3>
-                            <span>
+                            <h3 class="color-white">16,000+</h3>
+                            <span class="margin-b-30">
                                 Customers strong
                             </span>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="feature feature-1 text-center">
+                        <div class="text-center">
                             <img src="assets/img/history-button.png">
-                            <h3>24/7/365</h3>
-                            <span>
+                            <h3 class="color-white">24/7/365</h3>
+                            <span class="margin-b-30">
                                 Customers strong
                             </span>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="feature feature-1 text-center">
-                            <img src="assets/img/compass.png">
-                            <h3>Internet com mais velocidade.</h3>
-                            <span>
+                        <div class="text-center">
+                            <img src="assets/img/chrome-logo.png">
+                            <h3 class="color-white">Internet com mais velocidade.</h3>
+                            <span class="margin-b-0">
                                 E muito mais vantagens.
                             </span>
                         </div>
@@ -294,7 +369,7 @@
                     <div class="col-sm-4">
                         <h2 class="content-heading">Suporte <span class="border-black"></span></h2>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
                         <form class="form-group">
                             <div class="row">
                                 <div class="get-in-grid-right">
@@ -308,11 +383,11 @@
                                             <input id="" name="telefone" type="text" placeholder="Seu Telefone" />
                                         </div>
                                     </div>
-                                    <input type="submit" class="btn btn-lg btn-success" value="Enviar" >
+                                    <input type="submit" class="btn btn-lg btn-success raised" value="Enviar" >
                                 </div>
                             </div>
                         </form>
-                        <div class="col-sm-12">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="row">
                                 <div class="panel-group" id="accordion1">
                                     <div class="panel panel-default">
@@ -398,13 +473,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="row">
                             <div class="atendimento">
-                                <div class="col-sm-4">
+                                <div class="col-xs-12 col-sm-4 col-md-4">
                                     <h2 class="">Atendimento</h2>
                                 </div>
-                                <div class="col-sm-8">
+                                <div class="col-xs-12 col-sm-8 col-md-8">
                                     <select class="form-control" id="cidade">
                                         <option selected>Selecione a Cidade </option>
                                         <option>Rolim de Moura</option>
@@ -413,11 +488,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="atendimento-cidade">
-                            <h3>Rolim Net</h3>
-                            <span>Telefones: 69 3442-2779</span>
-                            <span>Endereço: Av. Manaus, 5095, Centro</span>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="margin-t-0 sm-margin-t-0 atendimento-cidade">
+                            <h3 class="margin-b-0">Rolim Net</h3>
+                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                            <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
                         </div>
                     </div>
                 </div>
@@ -426,15 +501,15 @@
     </div>
     
     <div id="fibra-up">
-        <div class="bg-color-orange" data-auto-height="true">
+        <div class="bg-color-orange">
             <div class="container content-sm">
-                <div class="col-sm-9">
+                <div class="col-sm-9 sm-margin-b-90">
                     <h2 class="color-white">Está precisando de velocidade? Rolim Net Fibra!...</h2>
                     <p class="color-white">Acesso a Internet de alta velocidade com toda qualidade de rede em 100% via fibra ótica.
                         Planos de acordo com a velocidade que você deseja.</p>
                     </div>
 
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 sm-margin-b-30">
                         <p>
                             <button type="button" class="btn btn-default btn-lg sharp pull-right">
                                 <span data-icon="&#xe008;" class="icon icon-lg"></span>  Assine já!</button>
@@ -445,7 +520,7 @@
             </div>
 
             <div id="contato" class="text-center">
-                <div class="bg-color-sky-light" data-auto-height="true">
+                <div class="bg-color-sky-light">
                     <div class="container content-sm">
                         <div class="row">
                             <div class="col-lg-8 col-md-offset-2">
@@ -486,9 +561,9 @@
 
             <div id="footer">
                 <div class="footer">
-                    <div class="container ">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 sm-margin-b-40">
                                 <h2>Rolim Net.</h2>
                                 <p>Rolim Net Tecnologia LTDA.</p>
                                 <br>
@@ -500,10 +575,10 @@
                                     </ul>
                                 </address>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 sm-margin-b-40">
                                 <h3>Links</h3>
-                                <div class="row margin-bottom-30px">
-                                    <div class="col-xs-6">
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-6 md-margin-b-40">
                                         <ul class="list-unstyled footer-nav">
                                             <li><a href="#">Empresa</a></li>
                                             <li><a href="#">Documentos Publicos</a></li>
@@ -512,7 +587,7 @@
                                             <li><a href="#">Blog</a></li>
                                         </ul>
                                     </div>
-                                    <div class="col-xs-6">
+                                    <div class="col-md-4 col-xs-6 md-margin-b-40">
                                         <ul class="list-unstyled footer-nav">
                                             <li><a href="#">Perguntas Frequentes</a></li>
                                             <li><a href="#">Contato</a></li>
@@ -520,7 +595,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-sm-4 sm-margin-b-40">
                                 <div class="social-connect">
                                     <h3>Você Conectado</h3>
                                     <ul class="soc">
@@ -528,14 +603,14 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-xs-12 text-center sm-text-center">
                                 <div class="copyright">
                                     <div class="copyright-breather text-center">
                                         <img src="assets/img/logo-dark.png">
                                         <p>
                                             Todos os direitos reservados &copy; 2016 NOC | Rolim Net.
                                         </p>
-                                        <div class="credits">
+                                        <div class="margin-b-0">
                                             <a href="#"> godoi.xyz</a>, made with <i class="fa fa-heart heart" alt="love"></i> for a better web.
                                         </div>
                                     </div>
@@ -545,6 +620,8 @@
                     </div>
                 </div>
             </div>
+
+            <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 
             <script src="assets/js/jquery.min.js" type="text/javascript"></script>
             <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
