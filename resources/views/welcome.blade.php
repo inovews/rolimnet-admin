@@ -83,7 +83,7 @@
                                     </ul>
                                     <hr>
                                     <h1><span>R$</span> 99,00</h1>
-                                    <button type="button" class="btn btn-lg btn-warning sharp">Assine já</button>
+                                    <button type="button" class="btn btn-lg btn-warning raised">Assine já</button>
                                     <p><a href="#">Conheça outros planos</a></p>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@
                                     </ul>
                                     <hr>
                                     <h1><span>R$</span> 99,00</h1>
-                                    <button type="button" class="btn btn-lg btn-warning sharp">Assine já</button>
+                                    <button type="button" class="btn btn-lg btn-warning raised">Assine já</button>
                                     <p><a href="#">Conheça outros planos</a></p>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                                     </ul>
                                     <hr>
                                     <h1><span>R$</span> 99,00</h1>
-                                    <button type="button" class="btn btn-lg btn-warning sharp">Assine já</button>
+                                    <button type="button" class="btn btn-lg btn-warning raised">Assine já</button>
                                     <p><a href="#">Conheça outros planos</a></p>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
             <div class="container content">
                 <div class="row">
                     <div class="col-sm-8">
-                        <button type="button" class="btn btn-default sharp">Acessar o FAQ</button>
+                        <a href="#" class="btn btn-default sharp">Acessar o FAQ</a>
                         <div class="row">
                             <div class="col-sm-12">
                                 <h4 class="color-white">Perguntas Frequentes</h4>
@@ -173,7 +173,7 @@
                             
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button type="button" class="btn btn-lg btn-default raised">Acessar Central</button>
+                                    <a href="#" class="btn btn-lg btn-default raised">Acessar Central</a>
                                 </div>
                                 <!--// end row -->
                             </div>
@@ -370,20 +370,21 @@
                         <h2 class="content-heading">Suporte <span class="border-black"></span></h2>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
-                        <form class="form-group">
+                    <p>Deixe seu numero de telefone/<i class="fa fa-whatsapp" aria-hidden="true"></i> que entraremos em contato o mais rapido possível.</p>
+                        <form class="form-group get-in-grid-right text-center">
                             <div class="row">
-                                <div class="get-in-grid-right">
-                                    <div class="col-sm-4">
-                                        <div class="input-with-icon">
-                                            <input id="" name="nome" type="text" placeholder="Seu Nome" />
-                                        </div>
+                                <div class="col-sm-5">
+                                    <div class="input-with-icon">
+                                        <input id="" name="nome" type="text" placeholder="Seu Nome" />
                                     </div>
-                                    <div class="col-sm-4">
-                                        <div class="input-with-icon">
-                                            <input id="" name="telefone" type="text" placeholder="Seu Telefone" />
-                                        </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="input-with-icon">
+                                        <input id="" name="telefone" type="text" placeholder="Seu Telefone" />
                                     </div>
-                                    <input type="submit" class="btn btn-lg btn-success raised" value="Enviar" >
+                                </div>
+                                <div class="col-sm-2">
+                                    <input type="submit" class="btn btn-success raised" value="Enviar" >
                                 </div>
                             </div>
                         </form>
@@ -482,7 +483,11 @@
                                 <div class="col-xs-12 col-sm-8 col-md-8">
                                     <select class="form-control" id="cidade">
                                         <option selected>Selecione a Cidade </option>
+                                        <option>Castanheiras</option>
+                                        <option>Novo Horizonte d' Oeste</option>
                                         <option>Rolim de Moura</option>
+                                        <option>Santa Luzia d' Oeste</option>
+                                        <option>Seringueiras</option>
                                     </select>
                                 </div>
                             </div>
@@ -495,6 +500,7 @@
                             <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
                         </div>
                     </div>
+                    <!--// end row -->
                 </div>
             </div>
         </div>
@@ -527,31 +533,31 @@
                                 <h2>Fale Conosco</h2>
                                 <p>Entre em contato com a nossa equipe</p>
                             </div>
-
+                            <!--// end row -->
                         </div>
                         <div class="col-sm-8 col-md-offset-2">
                             <div class="form-wrapper marginbot-50">
                                 <form>
                                     <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="nome" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres." />
+                                        <input type="text" name="nome" class="form-control" id="nome" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres." />
                                     </div>
                                     <div class="form-group">
                                         <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" data-rule="email" data-msg="Por favor digite um e-mail válido." />
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="subject" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Digite pelo menos 8 caracteres do assunto." />
+                                        <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Digite pelo menos 8 caracteres do assunto." />
                                     </div>
                                     <div class="form-group">
                                         <textarea class="form-control" name="mensagem" rows="5" data-rule="required" data-msg="Por favor, escreva algo." placeholder="Mensagem"></textarea>
                                     </div>
 
                                     <div class="text-center">
-                                        <button type="submit" class="btn btn-block btn-success sharp">Enviar Mensagem</button>
+                                        <button type="submit" class="btn btn-block btn-success raised">Enviar Mensagem</button>
                                     </div>
                                 </form>
                             </div>
                             <div class="text-center">
-                                <p class="lead"><i class="fa fa-phone"></i> Central de Atendimento (69) 3442-2779</p>
+                                <p class="margin-t-10"><i class="fa fa-phone"></i> Central de Atendimento (69) 3442-2779</p>
                             </div>
                         </div>
                     </div>
@@ -616,6 +622,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--// end row -->
                         </div>
                     </div>
                 </div>

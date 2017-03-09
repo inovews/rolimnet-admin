@@ -1078,18 +1078,11 @@ h4 {
 
 .get-in-grid-right input[type="text"]{
   outline:none;
-  color:#999;
   font-size:14px;
   width:81%;
   padding:13px 10px;
   background:#fff;
   border:1px solid #e1e1e1;
-}
-
-.get-in-grid-right input[type="submit"]{ 
-  width:15%;
-  font-size:15px;
-  margin: 0 0 0 3%;
 }
 
 .panel-group {
