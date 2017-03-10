@@ -78,7 +78,7 @@
 						<div class="row">
 							<div class="col-md-6 col-xs-6 md-margin-b-40">
 								<ul class="list-unstyled footer-nav">
-									<li><a href="#">Empresa</a></li>
+									<li><a href="{{ url('empresa') }}">Empresa</a></li>
 									<li><a href="#">Documentos Publicos</a></li>
 									<li><a href="#">FanPage</a></li>
 									<li><a href="#">Loja</a></li>
@@ -88,7 +88,10 @@
 							<div class="col-md-6 col-xs-6 md-margin-b-40">
 								<ul class="list-unstyled footer-nav">
 									<li><a href="#">Perguntas Frequentes</a></li>
-									<li><a href="#">Contato</a></li>
+									<li><a href="{{ url('produtos') }}">Produtos</a></li>
+									<li><a href="{{ url('suporte') }}">Suporte</a></li>
+									<li><a href="{{ url('ouvidoria') }}">Ouvidoria</a></li>
+									<li><a href="{{ url('contato') }}">Contato</a></li>
 								</ul>
 							</div>
 						</div>

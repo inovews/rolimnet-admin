@@ -453,6 +453,9 @@
                                             <div class="panel-body">
                                                 <p>Grande parte dos medidores de velocidade disponíveis na internet faz o teste da conexão do usuário através da média da velocidade de download de um arquivo. Porém, esse resultado pode ser afetado por vários fatores como a velocidade disponível no servidor do site e a quantidade de acessos simultâneos no momento do teste. Além disso, muitos destes medidores limitam a velocidade máxima de download ou simplesmente possuem conexão com a internet em velocidade inferior a que você tem com a Rolim Net.</p>
                                                 <p>Por isso, disponibilizamos em nosso site um medidor de velocidade.</p>
+                                                <!--OST Widget code start--><iframe src="http://openspeedtest.com/Get-widget.php" width="735" scrolling="no" height="490" frameborder="0">
+</iframe><br /><div style="text-align:center; width: 725px;"><a  href="http://openspeedtest.com?ref=widget">Powered by openspeedtest.com</a></div><!-- OST Widget code end -->
+
                                             </div>
                                         </div>
                                     </div>

@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('/empresa', 'Site\EmpresaController');
 Route::resource('/contato', 'Site\ContatoController');
+Route::resource('/ouvidoria', 'Site\OuvidoriaController');
+Route::resource('/suporte', 'Site\SuporteController');
