@@ -11,44 +11,45 @@
 	<div class="section-seperator">
 		<div class="container content">
 			<div class="row">
-			<div class="col-sm-12">
-			<h2>Canais de comunicação</h2>
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img src="assets/img/mouse.png">
-                            <h3>DÚVIDA POR E-MAIL</h3>
-                            <p class="margin-b-30">
-                                Entre em contato que teremos maior prazer em respondê-lo.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img src="assets/img/history-button.png">
-                            <h3>HORARIO DE ATENDIMENTO</h3>
-                            <p class="margin-b-30">
-                                Segunda a Sexta 08h as 18h<br>
-                                Sábado 08 as 13h
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img src="assets/img/user.png">
-                            <h3>CHAT ONLINE</h3>
-                            <p class="margin-b-0">
-                               Converse com um de nossos atendentes agora!
-                            </p>
-                            <button class="btn btn-default">Iniciar chat</button>
-                        </div>
-                    </div>
-                </div>
+				<div class="col-sm-12">
+					<h2>Canais de comunicação</h2>
+					<div class="col-sm-4">
+						<div class="text-center">
+							<img src="{{ url('assets/img/mouse.png') }}">
+							<h3>DÚVIDA POR E-MAIL</h3>
+							<p class="margin-b-30">
+								Entre em contato que teremos maior prazer em respondê-lo.
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="text-center">
+							<img src="{{ url('assets/img/history-button.png') }}">
+							<h3>HORARIO DE ATENDIMENTO</h3>
+							<p class="margin-b-30">
+								Segunda a Sexta 08h as 18h<br>
+								Sábado 08 as 13h
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="text-center">
+							<img src="{{ url('assets/img/user.png') }}">
+							<h3>CHAT ONLINE</h3>
+							<p class="margin-b-0">
+								Converse com um de nossos atendentes agora!
+							</p>
+							<button class="btn btn-default">Iniciar chat</button>
+						</div>
+					</div>
+				</div>
 				<div class="col-sm-12">
 				<h2>Quer entrar em contato com a gente?</h2>
 				<p>Para tirar dúvidas, nos dar sugestões, ou fazer algum tipo de reclamação, basta preencher os campos abaixo. Teremos o prazer em responder.</p>
 					<div class="row">
+					
 						<div class="col-sm-7">                  
-							<form id="ajax-contact"  method="post" action="contact-form-mail.php" role="form">
+							<form id="ajax-contact"  method="post" action="#" role="form">
 								<div class="messages" id="form-messages"></div>
 								<div class="controls">
 									<div class="row">
@@ -133,7 +134,31 @@
 									<a href="#">geral@rolimnet.com.br</a> <br> <a href="#">suporte@rolimnet.com.br</a>
 								</div>
 							</div><br>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.3850105893791!2d-61.778981206544195!3d-11.732684828113818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c86bf73f54805d%3A0xf073da2a98c27a5a!2sRolim+Net!5e0!3m2!1spt-BR!2sus!4v1489105726156" width="100%" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.3850105893791!2d-61.778981206544195!3d-11.732684828113818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c86bf73f54805d%3A0xf073da2a98c27a5a!2sRolim+Net!5e0!3m2!1spt-BR!2sus!4v1489105726156" width="100%" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div class="col-sm-7">
+							<h2>WhatsApp</h2>
+							<div class="col-sm-4">
+								<div class="text-center">
+									<i class="fa fa-whatsapp fa-5x" aria-hidden="true"></i>
+									<h3>Financeiro</h3>
+									<p>69 8494-5271</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="text-center">
+									<i class="fa fa-whatsapp fa-5x" aria-hidden="true"></i>
+									<h3>Suporte</h3>
+									<p>69 8451-8073</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="text-center">
+									<i class="fa fa-whatsapp fa-5x" aria-hidden="true"></i>
+									<h3>Vendas</h3>
+									<p>69 8475-3479</p>
+								</div>
+							</div>
 						</div>
 					</div>
 
