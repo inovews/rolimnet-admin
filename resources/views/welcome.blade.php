@@ -340,7 +340,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="text-center">
-                            <img src="assets/img/history-button.png">
+                            <img src="assets/img/settings.png">
                             <h3 class="color-white">24/7/365</h3>
                             <span class="margin-b-30">
                                 Customers strong
@@ -545,10 +545,13 @@
                                         <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" data-rule="email" data-msg="Por favor digite um e-mail válido." />
                                     </div>
                                     <div class="form-group">
+                                        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone" data-rule="minlen:4" data-msg="Por favor digite um telefone." />
+                                    </div>
+                                    <div class="form-group">
                                         <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Assunto" data-rule="minlen:4" data-msg="Digite pelo menos 8 caracteres do assunto." />
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" name="mensagem" rows="5" data-rule="required" data-msg="Por favor, escreva algo." placeholder="Mensagem"></textarea>
+                                        <textarea class="form-control" name="mensagem" rows="5" data-rule="required" placeholder="Mensagem" data-msg="Por favor, escreva algo."></textarea>
                                     </div>
 
                                     <div class="text-center">
