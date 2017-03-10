@@ -8,11 +8,11 @@
 	<meta content="" name="description"/>
 	<meta content="" name="author"/>
 
-	<link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700">
 	<link rel="stylesheet" type="text/css" href="{{ url('assets/bootstrap/css/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ url('assets/buttons/css/buttons.css') }}">
-	<link rel="stylesheet" href="{{ url('assets/font-awesome/css/font-awesome.min.css') }}" type="text/css">
-	<link rel="stylesheet" href="{{ url('assets/perfecticons/perfecticons.css') }}" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{{ url('assets/buttons/css/buttons.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url('assets/font-awesome/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url('assets/perfecticons/perfecticons.css') }}">
 
 	<link rel="stylesheet" type="text/css" href="{{ url('assets/css/index.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url('assets/css/paginas.css') }}">

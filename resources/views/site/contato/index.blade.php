@@ -49,21 +49,22 @@
 					<div class="row">
 					
 						<div class="col-sm-7">                  
-							<form id="ajax-contact"  method="post" action="#" role="form">
+							<form id="contact"  method="post" action="{{ route('contato.send') }}" role="form">
+								{{ csrf_field() }}
 								<div class="messages" id="form-messages"></div>
 								<div class="controls">
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="form_name">Nome *</label>
-												<input id="form_name" type="text" name="name" class="form-control" placeholder="Seu nome *" required="required" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres.">
+												<label for="nome">Nome *</label>
+												<input id="nome" type="text" name="nome" class="form-control" placeholder="Seu nome *" required="required" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres.">
 												<div class="help-block with-errors"></div>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="form_email">E-mail *</label>
-												<input id="form_email" type="email" name="email" class="form-control" placeholder="Seu e-mail *" required="required" data-rule="email" data-msg="Por favor digite um e-mail válido.">
+												<label for="email">E-mail *</label>
+												<input id="email" type="email" name="email" class="form-control" placeholder="Seu e-mail *" required="required" data-rule="email" data-msg="Por favor digite um e-mail válido.">
 												<div class="help-block with-errors"></div>
 											</div>
 										</div>
@@ -71,16 +72,15 @@
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="form_phone">Telefone *</label>
-												<input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Telefone *" required oninvalid="setCustomValidity('Por favor digite um telefone.')"
-												onchange="try{setCustomValidity('')}catch(e){}">
+												<label for="telefone">Telefone *</label>
+												<input id="telefone" type="tel" name="telefone"  class="form-control" placeholder="Telefone *" required="required" data-rule="minlen:9" data-msg="Por favor digite um telefone.">
 
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label for="form_lastname">Assunto *</label>
-												<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Assunto *" required="required" data-rule="minlen:4" data-msg="Digite pelo menos 8 caracteres do assunto.">
+												<label for="assunto">Assunto *</label>
+												<input id="assunto" type="text" name="assunto" class="form-control" placeholder="Assunto *" required="required" data-rule="minlen:8" data-msg="Digite pelo menos 8 caracteres do assunto.">
 												<div class="help-block with-errors"></div>
 											</div>
 										</div>
@@ -88,8 +88,8 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group">
-												<label for="form_message">Mensagem *</label>
-												<textarea id="form_message" name="message" class="form-control" placeholder="Mensagem *" rows="4" required="required" data-msg="Por favor, escreva algo."></textarea>
+												<label for="mensagem">Mensagem *</label>
+												<textarea id="mensagem" name="mensagem" class="form-control" placeholder="Mensagem *" rows="4" required="required" data-msg="Por favor, escreva algo."></textarea>
 												<div class="help-block with-errors"></div>
 											</div>
 										</div>

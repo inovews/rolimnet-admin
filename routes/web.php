@@ -20,6 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('/empresa', 'Site\EmpresaController');
+
 Route::resource('/contato', 'Site\ContatoController');
+Route::post('/contato/enviar', [ 'as' => 'contato.send', 'uses' => 'Site\ContatoController@send']);
+
 Route::resource('/ouvidoria', 'Site\OuvidoriaController');
+
 Route::resource('/suporte', 'Site\SuporteController');
