@@ -44,6 +44,7 @@
                         <ul class="nav navbar-nav navbar-nav-right">
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#body">Inicio</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#empresa">Empresa</a></li>
+                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('produtos') }}">Produtos</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#internet">Internet</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#suporte">Suporte</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#contato">Contato</a></li>
@@ -528,8 +529,8 @@
 
                     <div class="col-sm-3 sm-margin-b-30">
                         <p>
-                            <button type="button" class="btn btn-default btn-lg sharp pull-right">
-                                <span data-icon="&#xe008;" class="icon icon-lg"></span>  Assine já!</button>
+                            <a href="#" class="btn btn-default btn-lg sharp pull-right">
+                                <span data-icon="&#xe008;" class="icon icon-lg"></span>  Assine já!</a>
                             </p>
                         </div>
                     </div>

@@ -43,11 +43,12 @@
 				<div class="collapse navbar-collapse nav-collapse">
 					<div class="menu-container">
 						<ul class="nav navbar-nav navbar-nav-right">
-							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/') }}#body">Inicio</a></li>
-							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/') }}#empresa">Empresa</a></li>
-							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/') }}#internet">Internet</a></li>
-							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/') }}#suporte">Suporte</a></li>
-							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/') }}#contato">Contato</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#body') }}">Inicio</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#empresa') }}">Empresa</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('produtos') }}">Produtos</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#internet') }}">Internet</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#suporte') }}">Suporte</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#contato') }}">Contato</a></li>
 						</ul>
 					</div>
 				</div>
