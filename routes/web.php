@@ -22,6 +22,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('/empresa', 'Site\EmpresaController');
 
+Route::resource('/produtos', 'Site\ProdutosController');
+
 Route::resource('/fibra', 'Site\FibraController');
 Route::post('/fibra/enviar', [ 'as' => 'fibra.send', 'uses' => 'Site\FibraController@send']);
 
