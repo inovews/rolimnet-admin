@@ -60,7 +60,6 @@
 									<li>{{ $error }}</li>
 									@endforeach
 								</ul>
-								<div class="messages" id="form-messages"></div>
 								<div class="controls">
 									<div class="row">
 										<div class="col-md-6">

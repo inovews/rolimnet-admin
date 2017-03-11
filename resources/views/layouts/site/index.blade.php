@@ -18,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ url('assets/css/paginas.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url('assets/css/responsive.css') }}">
 
-	<title>Rolim Net</title>
+	<title>@yield('title') - Rolim Net</title>
 
 	<link rel="shortcut icon" href="favicon.ico"/>
 </head>
