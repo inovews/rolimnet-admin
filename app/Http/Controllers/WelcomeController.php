@@ -1,15 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Site;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-
-use App\Suporte;
-
-class SuporteController extends Controller
+class WelcomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +14,7 @@ class SuporteController extends Controller
     public function index()
     {
         //
-        return view('site.suporte.index');
+        return view('welcome');
     }
 
     /**
@@ -41,27 +36,6 @@ class SuporteController extends Controller
     public function store(Request $request)
     {
         //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function sendWelcome(Request $request) 
-    {
-        //
-        //return view('site.contato.index');
-
-        $this->validate($request, [
-                'nome' => 'required',
-                'telefone' => 'required',
-            ]);
-
-        Suporte::create($request->all());
-
-        //return \Redirect::route('welcome.index')->with('success-support', 'Contato enviado com sucesso.');
-        return redirect('/#suporte')->with('success-support', 'Contato enviado com sucesso.');
     }
 
     /**

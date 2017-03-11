@@ -34,9 +34,20 @@
 					<div class="row">
 					
 						<div class="col-sm-7">                  
-							<form id="ajax-contact"  method="post" action="#" role="form">
-								<div class="messages" id="form-messages"></div>
+							{!! Form::open(['route'=>'suporte.send']) !!}
+								<div class="messages" id="form-messages">
+									@if(Session::has('success'))
+									<div class="alert alert-success">
+										{{ Session::get('success') }}
+									</div>
+									@endif
+								</div>
 								<div class="controls">
+									<ul>
+	                                    @foreach($errors->all() as $error)
+	                                    <li>{{ $error }}</li>
+	                                    @endforeach
+	                                </ul>
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">

@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Http\Requests\ContatoRequest;
+use App\Contato;
 
 class ContatoController extends Controller
 {
@@ -37,29 +38,40 @@ class ContatoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function send(ContatoRequest $request)
+    public function send(Request $request)
     {
         //
         //return view('site.contato.index');
 
-        // upload photo file
-        $filePath = $this->upload($request->file('image'));
+        $this->validate($request, [
+                'nome' => 'required',
+                'email' => 'required|email',
+                'telefone' => 'required',
+                'assunto' => 'required',
+                'mensagem' => 'required'
+            ]);
 
-        \Mail::send('emails.notificacion',
-            array(
-                'nome' => $request->get('nome'),
-                'email' => $request->get('email'),
-                'telefone' => $request->get('telefone'),
-                'assunto' => $request->get('assunto'),
-                'mensagem' => $request->get('mensagem'),
-                'file' => $filePath,
-                ), function($message) 
-            {
-                $message->from('naoresponder@rolimnet.com.br');
-                $message->to('inovewebsites.com@gmail.com', 'Alex')->subject('You get new Feedback, boom!');
-            }
-        );
-        return \Redirect::route('contato.index')->with('message', 'Enviadooo'); 
+        Contato::create($request->all());
+
+        return \Redirect::route('contato.index')->with('success', 'E-mail enviado com sucesso.');
+    }
+
+    public function sendWelcome(Request $request)
+    {
+        //
+        //return view('site.contato.index');
+
+        $this->validate($request, [
+                'nome' => 'required',
+                'email' => 'required|email',
+                'telefone' => 'required',
+                'assunto' => 'required',
+                'mensagem' => 'required'
+            ]);
+
+        Contato::create($request->all());
+
+        return redirect('/#contato')->with('success-contacts', 'E-mail enviado com sucesso.');
     }
 
     /**
@@ -118,15 +130,4 @@ class ContatoController extends Controller
         //
     }
 
-    protected function upload($file)
-    {
-        if ($file->isValid()) {
-            $fileName = (new \DateTime())->format('d.m.Y-hsi').'.'.$file->guessExtension();
-            $file->move(storage_path() . '/uploads', $fileName);
-            return storage_path() . '/uploads/' . $fileName;
-        } else {
-            return \Redirect::route('contact_show')
-                ->with('message', 'Uploaded file is not valid!');
-        }        
-    }
 }

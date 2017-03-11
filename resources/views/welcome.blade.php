@@ -371,8 +371,18 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                     <p>Deixe seu numero de telefone/<i class="fa fa-whatsapp" aria-hidden="true"></i> que entraremos em contato o mais rapido possível.</p>
-                        <form class="form-group get-in-grid-right text-center">
+                        {!! Form::open(['route'=>'suporte.sendWelcome', 'class'=>'form-group get-in-grid-right text-center']) !!}
+                            @if(Session::has('success-support'))
+                            <div class="alert alert-success">
+                                {{ Session::get('success-support') }}
+                            </div>
+                            @endif
                             <div class="row">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
                                 <div class="col-sm-5">
                                     <div class="input-with-icon">
                                         <input id="" name="nome" type="text" placeholder="Seu Nome" />
@@ -386,6 +396,7 @@
                                 <div class="col-sm-2">
                                     <input type="submit" class="btn btn-success raised" value="Enviar" >
                                 </div>
+                                </form>
                             </div>
                         </form>
                         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -453,9 +464,6 @@
                                             <div class="panel-body">
                                                 <p>Grande parte dos medidores de velocidade disponíveis na internet faz o teste da conexão do usuário através da média da velocidade de download de um arquivo. Porém, esse resultado pode ser afetado por vários fatores como a velocidade disponível no servidor do site e a quantidade de acessos simultâneos no momento do teste. Além disso, muitos destes medidores limitam a velocidade máxima de download ou simplesmente possuem conexão com a internet em velocidade inferior a que você tem com a Rolim Net.</p>
                                                 <p>Por isso, disponibilizamos em nosso site um medidor de velocidade.</p>
-                                                <!--OST Widget code start--><iframe src="http://openspeedtest.com/Get-widget.php" width="735" scrolling="no" height="490" frameborder="0">
-</iframe><br /><div style="text-align:center; width: 725px;"><a  href="http://openspeedtest.com?ref=widget">Powered by openspeedtest.com</a></div><!-- OST Widget code end -->
-
                                             </div>
                                         </div>
                                     </div>
@@ -540,7 +548,17 @@
                         </div>
                         <div class="col-sm-8 col-md-offset-2">
                             <div class="form-wrapper marginbot-50">
-                                <form>
+                                @if(Session::has('success-contacts'))
+                                <div class="alert alert-success">
+                                    {{ Session::get('success-contacts') }}
+                                </div>
+                                @endif
+                                {!! Form::open(['route'=>'contato.sendWelcome']) !!}
+                                    <ul>
+                                        @foreach($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
                                     <div class="form-group">
                                         <input type="text" name="nome" class="form-control" id="nome" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Digite pelo menos 4 caracteres." />
                                     </div>

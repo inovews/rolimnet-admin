@@ -47,10 +47,19 @@
 				<h2>Quer entrar em contato com a gente?</h2>
 				<p>Para tirar dúvidas, nos dar sugestões, ou fazer algum tipo de reclamação, basta preencher os campos abaixo. Teremos o prazer em responder.</p>
 					<div class="row">
-					
-						<div class="col-sm-7">                  
-							<form id="contact"  method="post" action="{{ route('contato.send') }}" role="form">
-								{{ csrf_field() }}
+						<div class="col-sm-7">
+
+							@if(Session::has('success'))
+							<div class="alert alert-success">
+								{{ Session::get('success') }}
+							</div>
+							@endif                  
+								{!! Form::open(['route'=>'contato.send']) !!}
+								<ul>
+									@foreach($errors->all() as $error)
+									<li>{{ $error }}</li>
+									@endforeach
+								</ul>
 								<div class="messages" id="form-messages"></div>
 								<div class="controls">
 									<div class="row">
