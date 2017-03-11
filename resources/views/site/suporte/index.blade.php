@@ -34,7 +34,7 @@
 					<div class="row">
 					
 						<div class="col-sm-7">                  
-							{!! Form::open(['route'=>'suporte.send']) !!}
+							{!! Form::open(['route'=>'suporte.sendWelcome']) !!}
 								<div class="messages" id="form-messages">
 									@if(Session::has('success'))
 									<div class="alert alert-success">
