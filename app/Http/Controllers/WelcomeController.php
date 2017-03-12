@@ -109,11 +109,4 @@ class WelcomeController extends Controller
         $cidades = $estado->cidades()->getQuery()->get(['id', 'cidade']);
         return Response::json($cidades);
     }
-
-    public function getPlanos($idCidade)
-    {
-        $cidade = $this->cidadeModel->find($idCidade);
-        $planos = $cidade->planos()->getQuery()->get(['id', 'plano']);
-        return Response::json($planos);
-    }
 }

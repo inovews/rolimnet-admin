@@ -724,13 +724,6 @@
                         $.each(cidades, function (key, value) {
                             $('select[name=cidade]').append('<option value=' + value.id + '>' + value.cidade + '</option>');
                         });
-                        var idCidade = $(this).val();
-                        $.get('/get-cidades/' + idEstado +'/' + idCidade, function (planos) {
-                            $('select[name=planos]').empty();
-                            $.each(cidades, function (key, value) {
-                            $('select[name=planos]').append('Teste');
-                        });
-                        });
                     });
                 });
             </script>
