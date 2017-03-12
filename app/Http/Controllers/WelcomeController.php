@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 
-use Illuminate\Support\Facades\Response;
+//use Illuminate\Support\Facades\Response;
 
-use App\Estado;
-use App\Planos;
+//use App\Estado;
+//use App\Planos;
 
 class WelcomeController extends Controller
 {
