@@ -220,13 +220,18 @@
                                                     <label  class="col-sm-2">Estado</label>
                                                     <div class="col-sm-4">
                                                         <div class="iconic-input">
-                                                            {{ Form::select('estado', $estados, null, array('id' => 'estado', 'class' => 'form-control')) }}
+                                                            <select class="form-control m-bot15" name="planos_uf" id="planos_uf">
+                                                                <option value="0">Selecione o Estado</option>
+                                                                <option value='23' >RO</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                     <label  class="col-sm-2">Cidade</label>
                                                     <div class="col-sm-4">
                                                         <div class="iconic-input">
-                                                            {{ Form::select('cidade', [], 44, array('id' => 'cidade', 'class' => 'form-control')) }}
+                                                            <select class="form-control m-bot15" name="planos_cidade" id="planos_cidade">
+                                                                <option value='0'>Selecione a Cidade</option>
+                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
