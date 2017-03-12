@@ -15,12 +15,12 @@ use App\Planos;
 class WelcomeController extends Controller
 {
 
-    private $estadoModel;
+    /*private $estadoModel;
 
     public function __construct(Estado $estado, Planos $planos)
     {
         $this->estadoModel = $estado;
-    }
+    }*/
 
     /**
      * Display a listing of the resource.
@@ -30,11 +30,11 @@ class WelcomeController extends Controller
     public function index()
     {
         //
-        //return view('welcome');
+        return view('welcome');
 
-        $estados = $this->estadoModel->pluck('estado', 'id');
+        /*$estados = $this->estadoModel->pluck('estado', 'id');
 
-        return view('welcome', compact('estados'));
+        return view('welcome', compact('estados'));*/
     }
 
     /**
@@ -103,10 +103,10 @@ class WelcomeController extends Controller
         //
     }
 
-    public function getCidades($idEstado)
+    /*public function getCidades($idEstado)
     {
         $estado = $this->estadoModel->find($idEstado);
         $cidades = $estado->cidades()->getQuery()->get(['id', 'cidade']);
         return Response::json($cidades);
-    }
+    }*/
 }
