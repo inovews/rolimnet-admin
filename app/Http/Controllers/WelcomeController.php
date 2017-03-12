@@ -4,8 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Controllers\Controller;
+use App\Http\Requests;
+
+use Illuminate\Support\Facades\Response;
+
+use App\Estado;
+use App\Planos;
+
 class WelcomeController extends Controller
 {
+
+    private $estadoModel;
+
+    public function __construct(Estado $estado, Planos $planos)
+    {
+        $this->estadoModel = $estado;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +30,11 @@ class WelcomeController extends Controller
     public function index()
     {
         //
-        return view('welcome');
+        //return view('welcome');
+
+        $estados = $this->estadoModel->pluck('estado', 'id');
+
+        return view('welcome', compact('estados'));
     }
 
     /**
@@ -81,5 +101,19 @@ class WelcomeController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function getCidades($idEstado)
+    {
+        $estado = $this->estadoModel->find($idEstado);
+        $cidades = $estado->cidades()->getQuery()->get(['id', 'cidade']);
+        return Response::json($cidades);
+    }
+
+    public function getPlanos($idCidade)
+    {
+        $cidade = $this->cidadeModel->find($idCidade);
+        $planos = $cidade->planos()->getQuery()->get(['id', 'plano']);
+        return Response::json($planos);
     }
 }

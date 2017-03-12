@@ -11,7 +11,19 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/buttons/css/buttons.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/perfecticons/perfecticons.css" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css">
 
     <!-- Scripts -->
     <script>
@@ -21,7 +33,6 @@
     </script>
 </head>
 <body>
-    <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -79,9 +90,76 @@
         </nav>
 
         @yield('content')
+        <div class="col-sm-12">
+            <div id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 sm-margin-b-40">
+                        <h2>Rolim Net.</h2>
+                        <p>Rolim Net Tecnologia LTDA.</p>
+                        <br>
+                        <address class="margin-bottom-30px">
+                            <ul class="list-unstyled">
+                                <li>Av. Manaus, 5095, Rolim de Moura/RO</li>
+                                <li>Fone: (69) 3442-2779</li>
+                                <li>E-mail: geral@rolimnet.com.br</li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-40">
+                        <h3>Links</h3>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6 md-margin-b-40">
+                                <ul class="list-unstyled footer-nav">
+                                    <li><a href="{{ route('empresa.index') }}">Empresa</a></li>
+                                    <li><a href="#">Documentos Publicos</a></li>
+                                    <li><a href="#">FanPage</a></li>
+                                    <li><a href="#">Loja</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-xs-6 md-margin-b-40">
+                                <ul class="list-unstyled footer-nav">
+                                    <li><a href="#">Perguntas Frequentes</a></li>
+                                    <li><a href="{{ route('produtos.index') }}">Produtos</a></li>
+                                    <li><a href="{{ route('suporte.index') }}">Suporte</a></li>
+                                    <li><a href="{{ route('ouvidoria.index') }}">Ouvidoria</a></li>
+                                    <li><a href="{{ route('contato.index') }}">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-40">
+                        <div class="social-connect">
+                            <h3>Você Conectado</h3>
+                            <ul class="soc">
+                                <li><a class="soc-facebook" href="http://www.facebook.com/rolimnet"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 text-center sm-text-center">
+                        <div class="copyright">
+                            <div class="copyright-breather text-center">
+                                <img src="{{ url('assets/img/logo-dark.png') }}">
+                                <p>
+                                    Todos os direitos reservados &copy; 2016 NOC | Rolim Net.
+                                </p>
+                                <div class="margin-b-0">
+                                    <a href="#"> godoi.xyz</a>, made with <i class="fa fa-heart heart" alt="love"></i> for a better web.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+        </div>
     </div>
+        </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>

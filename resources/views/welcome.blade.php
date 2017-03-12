@@ -44,7 +44,7 @@
                         <ul class="nav navbar-nav navbar-nav-right">
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#body">Inicio</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#empresa">Empresa</a></li>
-                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('produtos') }}">Produtos</a></li>
+                            <li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ route('produtos.index') }}">Produtos</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#internet">Internet</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#suporte">Suporte</a></li>
                             <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#contato">Contato</a></li>
@@ -137,7 +137,7 @@
                     <div class="text-center sm-text-left">
                         <h1 class="color-blue margin-b-0">Bem-Vindo!</h1>
                         <p>A Rolim Net surgiu no ano de 2008, hoje tem presença em mais de 10 cidades e várias Linhas na Zona da Mata. A Rolim Net é ganhadora do Troféu ACIRM dos anos de 2010, 2012, 2013, 2014 e 2015.</p>
-                        <p class="text-right"><a href="{{ url('empresa') }}" class="color-blue">...mais sobre a empresa</a></p>
+                        <p class="text-right"><a href="{{ route('empresa.index') }}" class="color-blue">...mais sobre a empresa</a></p>
                     </div>
                 </div>
                 <div class="col-sm-7">
@@ -213,24 +213,20 @@
                                         </ul>
                                     </div>
                                     <div class="col-sm-8">
+                                    <script type="text/javascript"></script>
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="col-sm-12 cidades-uf">
                                                     <label  class="col-sm-2">Estado</label>
                                                     <div class="col-sm-4">
                                                         <div class="iconic-input">
-                                                            <select class="form-control m-bot15" name="planos_uf" id="planos_uf">
-                                                                <option value="0">Selecione o Estado</option>
-                                                                <option value='23' >RO</option>
-                                                            </select>
+                                                            {{ Form::select('estado', $estados, null, array('id' => 'estado', 'class' => 'form-control')) }}
                                                         </div>
                                                     </div>
                                                     <label  class="col-sm-2">Cidade</label>
                                                     <div class="col-sm-4">
                                                         <div class="iconic-input">
-                                                            <select class="form-control m-bot15" name="planos_cidade" id="planos_cidade">
-                                                                <option value='0'>Selecione a Cidade</option>
-                                                            </select>
+                                                            {{ Form::select('cidade', [], 44, array('id' => 'cidade', 'class' => 'form-control')) }}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -238,7 +234,7 @@
                                         </div>
                                         <div class="col-sm-12">
                                                 <div class="row">
-                                                    <div class="col-md-4 md-margin-b-30">
+                                                    <div id='planos' class="col-md-4 md-margin-b-30">
                                                         <!-- Pricing List v4 -->
                                                         <div class="pricing-list-v4 radius-10">
                                                             <div class="pricing-list-v4-header">
@@ -493,23 +489,65 @@
                                     <h2 class="">Atendimento</h2>
                                 </div>
                                 <div class="col-xs-12 col-sm-8 col-md-8">
-                                    <select class="form-control" id="cidade">
-                                        <option selected>Selecione a Cidade </option>
-                                        <option>Castanheiras</option>
-                                        <option>Novo Horizonte d' Oeste</option>
-                                        <option>Rolim de Moura</option>
-                                        <option>Santa Luzia d' Oeste</option>
-                                        <option>Seringueiras</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                                    <select class="atendimento-cidade-div" data-target=".atendimento-cidade-dados">
+                                        <option selected data-show=".defalt">Selecione a Cidade </option>
+                                        <option value="orange" data-show=".cao">Cacoal</option>
+                                        <option value="orange" data-show=".cas">Castanheiras</option>
+                                        <option value="orange" data-show=".mdc">Presidente Medíci</option>
+                                        <option value="lemon" data-show=".nho">Novo Horizonte d' Oeste</option>
+                                        <option value="apple" data-show=".rlm">Rolim de Moura</option>
+                                        <option value="pear" data-show=".stl">Santa Luzia d' Oeste</option>
+                                        <option value="pear" data-show=".ser">Seringueiras</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="margin-t-0 sm-margin-t-0 atendimento-cidade">
-                            <h3 class="margin-b-0">Rolim Net</h3>
-                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
-                            <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
+                            <div class="atendimento-cidade-dados">
+                                <div class="defalt hide">
+                                    <h3 class="margin-b-0">Selecione a Cidade</h3>
+                                </div>
+                                <div class="cao hide">
+                                    <h3 class="margin-b-0">Rolim Net</h3>
+                                    <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                                    <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
+                                    <p>* As cidades de Cacoal e Presidente Médici contem apenas atendimento na zona rural.</p>
+                                </div>
+                                <div class="cas hide">
+                                    <h3 class="margin-b-0">InfoCast</h3>
+                                    <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                                </div>
+                                <div class="mdc hide">
+                                    <h3 class="margin-b-0">Rolim Net</h3>
+                                    <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                                    <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
+                                    <p>* As cidades de Cacoal e Presidente Médici contem apenas atendimento na zona rural.</p>
+                                </div>
+                                <div class="nho hide">
+                                    <h3 class="margin-b-0">Rolim Net</h3>
+                                    <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                                    <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
+                                    <hr>
+                                    <h3 class="margin-b-0">João</h3>
+                                    <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                                </div>
+                                <div class="rlm hide">
+                                    <h3 class="margin-b-0">Rolim Net</h3>
+                                    <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                                    <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
+                                </div>
+                                <div class="stl hide">
+                                    <h3 class="margin-b-0">Marcos André</h3>
+                                    <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                                </div>
+                                <div class="ser hide">
+                                    <h3 class="margin-b-0">Laercio Degasperi</h3>
+                                    <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--// end row -->
@@ -529,7 +567,7 @@
 
                     <div class="col-sm-3 sm-margin-b-30">
                         <p>
-                            <a href="#" class="btn btn-default btn-lg sharp pull-right">
+                            <a href="{{ route('fibra.index') }}" class="btn btn-default btn-lg sharp pull-right">
                                 <span data-icon="&#xe008;" class="icon icon-lg"></span>  Assine já!</a>
                             </p>
                         </div>
@@ -611,7 +649,7 @@
                                 <div class="row">
                                     <div class="col-md-6 col-xs-6 md-margin-b-40">
                                         <ul class="list-unstyled footer-nav">
-                                            <li><a href="{{ url('empresa') }}">Empresa</a></li>
+                                            <li><a href="{{ route('empresa.index') }}">Empresa</a></li>
                                             <li><a href="#">Documentos Publicos</a></li>
                                             <li><a href="#">FanPage</a></li>
                                             <li><a href="#">Loja</a></li>
@@ -621,10 +659,10 @@
                                     <div class="col-md-6 col-xs-6 md-margin-b-40">
                                         <ul class="list-unstyled footer-nav">
                                             <li><a href="#">Perguntas Frequentes</a></li>
-                                            <li><a href="{{ url('produtos') }}">Produtos</a></li>
-                                            <li><a href="{{ url('suporte') }}">Suporte</a></li>
-                                            <li><a href="{{ url('ouvidoria') }}">Ouvidoria</a></li>
-                                            <li><a href="{{ url('contato') }}">Contato</a></li>
+                                            <li><a href="{{ route('produtos.index') }}">Produtos</a></li>
+                                            <li><a href="{{ route('suporte.index') }}">Suporte</a></li>
+                                            <li><a href="{{ route('ouvidoria.index') }}">Ouvidoria</a></li>
+                                            <li><a href="{{ route('contato.index') }}">Contato</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -663,6 +701,39 @@
             <script src="assets/js/jquery.parallax.min.js" type="text/javascript"></script>
 
             <script src="assets/js/index.js" type="text/javascript"></script>
+
+            <script type='text/javascript'>//<![CDATA[
+                $(window).load(function(){
+                    $(document).on('change', '.atendimento-cidade-div', function() {
+                      var target = $(this).data('target');
+                      var show = $("option:selected", this).data('show');
+                      $(target).children().addClass('hide');
+                      $(show).removeClass('hide');
+                  });
+                    $(document).ready(function(){
+                        $('.atendimento-cidade-div').trigger('change');
+                    });
+                });//]]> 
+            </script>
+
+            <script type="text/javascript">
+                $('select[name=estado]').change(function () {
+                    var idEstado = $(this).val();
+                    $.get('/get-cidades/' + idEstado, function (cidades) {
+                        $('select[name=cidade]').empty();
+                        $.each(cidades, function (key, value) {
+                            $('select[name=cidade]').append('<option value=' + value.id + '>' + value.cidade + '</option>');
+                        });
+                        var idCidade = $(this).val();
+                        $.get('/get-cidades/' + idEstado +'/' + idCidade, function (planos) {
+                            $('select[name=planos]').empty();
+                            $.each(cidades, function (key, value) {
+                            $('select[name=planos]').append('Teste');
+                        });
+                        });
+                    });
+                });
+            </script>
 
         </body>
         </html>

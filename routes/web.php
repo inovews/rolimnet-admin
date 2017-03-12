@@ -35,3 +35,7 @@ Route::post('/suporte/index/enviar', [ 'as' => 'suporte.sendWelcome', 'uses' => 
 Route::resource('/contato', 'Site\ContatoController');
 Route::post('/contato/index/enviar', [ 'as' => 'contato.sendWelcome', 'uses' => 'Site\ContatoController@sendWelcome']);
 Route::post('/contato/enviar', [ 'as' => 'contato.send', 'uses' => 'Site\ContatoController@send']);
+
+
+Route::get('get-cidades/{idEstado}', 'WelcomeController@getCidades');
+Route::get('get-cidades/{idEstado}/{idCidade}', 'WelcomeController@getPlanos');

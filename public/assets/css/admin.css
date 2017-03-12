@@ -1,0 +1,23 @@
+.footer{
+   padding-top: 30px;
+  width:100%;
+}
+
+.footer-content{
+  padding:10px 0 0;
+  border-top:1px solid #dfe3e4;
+  font-weight:400;
+}
+
+.copyright {
+  border-top: 1px solid #3f3f3f;
+}
+
+.copyright-breather {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.heart {
+  color: #e74c3c;
+}

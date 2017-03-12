@@ -45,7 +45,7 @@
 						<ul class="nav navbar-nav navbar-nav-right">
 							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#body') }}">Inicio</a></li>
 							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#empresa') }}">Empresa</a></li>
-							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('produtos') }}">Produtos</a></li>
+							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ route('produtos.index') }}">Produtos</a></li>
 							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#internet') }}">Internet</a></li>
 							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#suporte') }}">Suporte</a></li>
 							<li class="nav-item"><a class="nav-item-child nav-item-hover" href="{{ url('/#contato') }}">Contato</a></li>
@@ -79,7 +79,7 @@
 						<div class="row">
 							<div class="col-md-6 col-xs-6 md-margin-b-40">
 								<ul class="list-unstyled footer-nav">
-									<li><a href="{{ url('empresa') }}">Empresa</a></li>
+									<li><a href="{{ route('empresa.index') }}">Empresa</a></li>
 									<li><a href="#">Documentos Publicos</a></li>
 									<li><a href="#">FanPage</a></li>
 									<li><a href="#">Loja</a></li>
@@ -89,10 +89,10 @@
 							<div class="col-md-6 col-xs-6 md-margin-b-40">
 								<ul class="list-unstyled footer-nav">
 									<li><a href="#">Perguntas Frequentes</a></li>
-									<li><a href="{{ url('produtos') }}">Produtos</a></li>
-									<li><a href="{{ url('suporte') }}">Suporte</a></li>
-									<li><a href="{{ url('ouvidoria') }}">Ouvidoria</a></li>
-									<li><a href="{{ url('contato') }}">Contato</a></li>
+									<li><a href="{{ route('produtos.index') }}">Produtos</a></li>
+									<li><a href="{{ route('suporte.index') }}">Suporte</a></li>
+									<li><a href="{{ route('ouvidoria.index') }}">Ouvidoria</a></li>
+									<li><a href="{{ route('contato.index') }}">Contato</a></li>
 								</ul>
 							</div>
 						</div>
@@ -101,7 +101,7 @@
 						<div class="social-connect">
 							<h3>Você Conectado</h3>
 							<ul class="soc">
-								<li><a class="soc-facebook" href="#"></a></li>
+								<li><a class="soc-facebook" href="http://www.facebook.com/rolimnet"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -131,6 +131,18 @@
 	<script src="{{ url('assets/js/jquery.parallax.min.js') }}" type="text/javascript"></script>
 
 	<script src="{{ url('assets/js/index.js') }}" type="text/javascript"></script>
+
+	<script type="text/javascript">
+        $('select[name=estado]').change(function () {
+            var idEstado = $(this).val();
+            $.get('/get-cidades/' + idEstado, function (cidades) {
+                $('select[name=cidade]').empty();
+                $.each(cidades, function (key, value) {
+                    $('select[name=cidade]').append('<option value=' + value.id + '>' + value.cidade + '</option>');
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
